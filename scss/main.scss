@@ -1,3 +1,5 @@
+//general settings
+
 *{
   margin: 0;
   padding: 0;
@@ -94,7 +96,7 @@ main {
   margin-right: 10vw;
 }
 main div{
-  background-image: url("/images/ae2254c7a20031b453a409bb2edbbbe5.png");
+  background-image: url("../images/ae2254c7a20031b453a409bb2edbbbe5.png");
   background-repeat: no-repeat;
   background-size: cover;
   -webkit-background-origin: border;
@@ -104,7 +106,7 @@ main div{
   display: flex;
 }
 main div.OHIR{
-  background-image: url('/images/30db76930842ded693c4c674590e84dd.jpg');
+  background-image: url('../images/30db76930842ded693c4c674590e84dd.jpg');
   background-size: 80vw 450px;
   p{
     font-size: 280px;
