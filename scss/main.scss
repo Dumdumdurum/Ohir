@@ -79,4 +79,40 @@ button {
   height: 60px;
   color: #ff5958;
   border-color: #ff5958;
+  margin-right: 35px;
+  margin-left: 25px;
+}
+main {
+  width: 80vw;
+  background: black;
+  height: 1000px;
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+main div{
+  background-image: url("/images/ae2254c7a20031b453a409bb2edbbbe5.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-origin: border;
+  width: 80vw;
+  height: 400px;
+  margin: 0;
+  display: flex;
+}
+main div.OHIR{
+  background-image: url('/images/30db76930842ded693c4c674590e84dd.jpg');
+  background-size: 80vw 450px;
+  p{
+    font-size: 280px;
+    align-self: center;
+    margin-left: 33vw;
+  }
+}
+main button.story{
+  background-color: rgba(255, 89, 88, 0.75);
+  color: #FFFFFF;
+  border: none;
+  width: 500px;
+  align-self: center;
+  margin-left: 23vw;
 }
