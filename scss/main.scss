@@ -1,0 +1,82 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #FFFFFF;
+}
+.container{
+  width:100%;
+  max-width: 1650px;
+  margin:0 auto;
+}
+
+.row::after{
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.col{
+  float:left;
+}
+
+@font-face {
+  font-family: 'muncieregular';
+  src: url('./fonts/muncie-webfont.woff2') format('woff2'),
+  url('./fonts/muncie-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'pt_sansregular';
+  src: url('./fonts/pt_sans-web-regular-webfont.woff2') format('woff2'),
+  url('./fonts/pt_sans-web-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+body {
+  background-image: url("../images/2e58dbd47f9f310f97d956c8fd73a1c4.jpg");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+header {
+  background: black;
+  width: 100vw;
+  height: 100px;
+}
+img {
+  height: 65px;
+  width: 65px;
+  margin-left: 40px;
+  margin-top: 17.5px;
+}
+p {
+  font-size: 80px;
+  margin-left: 90px;
+  margin-top: 18px;
+  letter-spacing: 5px;
+  font-family: muncieregular;
+}
+header nav.col{
+  float: right;
+  font-size: 20px;
+  font-family: pt_sansregular;
+  margin-top: 15px;
+}
+a{
+  text-decoration: none;
+  margin-left: 20px;
+  margin-right: 10px;
+}
+button {
+  font-size: 24px;
+  letter-spacing: 3px;
+  background-color: black;
+  width: 170px;
+  height: 60px;
+  color: #ff5958;
+  border-color: #ff5958;
+}
