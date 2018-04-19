@@ -27,21 +27,22 @@
   font-weight: normal;
   font-style: normal;
 }
-@font-face {
-  font-family: 'pt_sansregular';
-  src: url('./fonts/pt_sans-web-regular-webfont.woff2') format('woff2'),
-  url('./fonts/pt_sans-web-regular-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
+//@font-face {
+//  font-family: 'pt_sansregular';
+//  src: url('./fonts/pt_sans-web-regular-webfont.woff2') format('woff2'),
+//  url('./fonts/pt_sans-web-regular-webfont.woff') format('woff');
+//  font-weight: normal;
+//  font-style: normal;
+//}
 
 
 body {
-  background-image: url("../images/2e58dbd47f9f310f97d956c8fd73a1c4.jpg");
-  background-repeat: no-repeat;
-  -webkit-background-size: cover;
+  background-color: #0d1a20;
   background-size: cover;
 }
+
+//header
+
 header {
   background: black;
   width: 100vw;
@@ -50,7 +51,7 @@ header {
 img {
   height: 65px;
   width: 65px;
-  margin-left: 40px;
+  margin-left: 50px;
   margin-top: 17.5px;
 }
 p {
@@ -63,7 +64,7 @@ p {
 header nav.col{
   float: right;
   font-size: 20px;
-  font-family: pt_sansregular;
+  font-family: 'PT sans';
   margin-top: 15px;
 }
 a{
@@ -82,6 +83,9 @@ button {
   margin-right: 35px;
   margin-left: 25px;
 }
+
+//main site
+
 main {
   width: 80vw;
   background: black;
@@ -112,7 +116,7 @@ main button.story{
   background-color: rgba(255, 89, 88, 0.75);
   color: #FFFFFF;
   border: none;
-  width: 500px;
+  width: 550px;
   align-self: center;
   margin-left: 23vw;
 }
