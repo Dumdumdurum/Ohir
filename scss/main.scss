@@ -22,6 +22,10 @@
   float:left;
 }
 
+h2, h3{
+  font-weight: normal;
+}
+
 @font-face {
   font-family: 'muncieregular';
   src: url('./fonts/muncie-webfont.woff2') format('woff2'),
@@ -51,17 +55,18 @@ header {
   height: 80px;
   position: fixed;
   top:0;
+  z-index: 2;
 }
 img {
   height: 62px;
   width: 62px;
-  margin-left: 80px;
-  margin-top: 8px;
+  margin-left: 5vw;
+  margin-top: 0.6vh;
 }
 header p {
   font-size: 80px;
-  margin-left: 80px;
-  margin-top: 8px;
+  margin-left: 5vw;
+  margin-top: 0.6vh;
   letter-spacing: 5px;
   font-family: muncieregular;
 }
@@ -69,12 +74,13 @@ header nav.col{
   float: right;
   font-size: 16px;
   font-family: 'PT sans';
-  margin-top: 15px;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
 }
 a{
   text-decoration: none;
-  margin-left: 20px;
-  margin-right: 10px;
+  margin-left: 2vw;
+  margin-right: 1vw;
 }
 button {
   font-size: 20px;
@@ -84,11 +90,12 @@ button {
   height: 60px;
   color: #FFFFFF;
   border: none;
-  margin-right: 35px;
-  margin-left: 25px;
 }
 
 header button{
+
+  margin-right: 35px;
+  margin-left: 25px;
   background-color: black;
   color: #ff5958;
   border: 2px solid rgba(255, 89, 88, 0.75);
@@ -109,40 +116,43 @@ main {
   padding-top: 80px;
 }
 
-//part 1 of the site -- OHIR
+//section 1 of the site -- OHIR
 
-main div.OHIR{
+main section.OHIR{
   background-image: url('../images/30db76930842ded693c4c674590e84dd.jpg');
   background-size: 80vw 50vh;
   height: 40vh;
   display: flex;
+  justify-content: center;
   p{
     font-size: 280px;
     align-self: center;
-    margin-left: 30vw;
+    //margin-left: 30vw;
+    //margin-right: 30vw;
     text-shadow: -5px 0 #458b74;
     font-family: muncieregular;
   }
 }
 
-//part 2 of the site -- ONBOARD
+//section 2 of the site -- ONBOARD
 
-div.ONBOARD {
+section.ONBOARD {
   height: 60vh;
   background-image: url("../images/2e58dbd47f9f310f97d956c8fd73a1c4.jpg");
   background-repeat: no-repeat;
   background-size: 80vw 80vh;
+  display: flex;
+  justify-content: center;
   img{
     height: 55vh;
-    width: 50vw;
-    margin-left: -45px;
+    width: 45vw;
+    margin-left: -5vw;
   }
   div.border{
     //padding-top: 40px;
     //padding-bottom: 40px;
-    position: absolute;
-    margin-left: 38vw;
-    margin-top: 12vh;
+    align-self: center;
+    margin-right: 2vw;
     //padding-left: 5px;
     //padding-right: 35px;
     padding: 40px 50px 40px 20px;
@@ -159,17 +169,19 @@ div.ONBOARD {
   }
 }
 
-//part 3 of the site -- STORY
+//section 3 of the site -- STORY
 
-main div.STORY{
+main section.STORY{
   background-image: url("../images/ae2254c7a20031b453a409bb2edbbbe5.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 80vw 50vh;
   -webkit-background-origin: border;
   width: 80vw;
   height: 50vh;
   margin: 0;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 main button.story{
@@ -177,6 +189,146 @@ main button.story{
   color: #FFFFFF;
   border: none;
   width: 550px;
-  align-self: center;
-  margin-left: 23vw;
+}
+
+//section 4 of the site -- FRAGMENT
+
+main section.FRAGMENT{
+  background: url("../images/2e58dbd47f9f310f97d956c8fd73a1c4.jpg") no-repeat;
+  background-size: 80vw 90vh;
+  height: 90vh;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  font-family: "PT sans";
+  img{
+    height: 60vh;
+    width: 45vw;
+    margin-top: -5vh;
+    margin-left: -1vw;
+  }
+  div.col{
+    width: 30vw;
+    margin-top: 8vh;
+    color: #FFFFFF;
+    line-height: 36px;
+    margin-right: 5vw;
+    span{
+      font-size: 34px;
+      letter-spacing: 5px;
+    }
+    p{
+      margin-top: 3vh;
+      font-size: 24px;
+    }
+    input {
+      width: 25vw;
+      height: 50px;
+      color: #0d1a20;
+      font-size: 24px;
+      margin-top: 3vh;
+    }
+  }
+  div.AUTHOR{
+    width: 50vw;
+    h3{
+      font-size: 34px;
+      letter-spacing: 5px;
+      text-align: center;
+    }
+    p{
+      font-size: 24px;
+      margin-top: 2.5vh;
+    }
+  }
+
+}
+
+//section 5 of the page -- SHOP
+
+main section.SHOP{
+  background: url("../images/30db76930842ded693c4c674590e84dd.jpg");
+  background-position:  60% 33%;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img {
+    height: 50vh;
+    width: 45vw;
+  }
+  div{
+    display: flex;
+    flex-flow: row wrap;
+    //flex-direction: column;
+    font-family: "PT sans";
+    font-size: 24px;
+    line-height: 36px;
+    padding: 40px 50px 40px 20px;
+    background-color: rgba(30, 127, 136, 0.6);
+    margin-right: 2vw;
+    span{
+      flex-basis: 100%;
+    }
+    h3{
+      flex-basis: 100%;
+    }
+    h2{
+      margin-top: 1vh;
+      display: inline;
+      font-family: muncieregular;
+      font-size: 64px;
+      line-height: 76px;
+      letter-spacing: 5px;
+    }
+    button{
+      margin-top: 2vh;
+      margin-left: 2vw;
+    }
+  }
+}
+
+//section 6 of the page -- FOUR
+
+main section.FOUR{
+
+  background: url("../images/30db76930842ded693c4c674590e84dd.jpg");
+  background-position:  25% 20%;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img {
+    height: 50vh;
+    width: 40vw;
+  }
+  div{
+    display: flex;
+    flex-flow: row wrap;
+    //flex-direction: column;
+    font-family: "PT sans";
+    font-size: 24px;
+    line-height: 36px;
+    padding: 40px 50px 40px 20px;
+    background-color: rgba(30, 127, 136, 0.6);
+    margin-left: 4vw;
+    span{
+      flex-basis: 100%;
+    }
+    h3{
+      flex-basis: 100%;
+    }
+    h2{
+      margin-top: 1.5vh;
+      display: inline;
+      font-family: muncieregular;
+      font-size: 64px;
+      line-height: 76px;
+      letter-spacing: 5px;
+    }
+    button{
+      margin-top: 2vh;
+      margin-left: 2vw;
+    }
+  }
 }
