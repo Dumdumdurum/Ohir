@@ -47,41 +47,6 @@ body {
   background-size: cover;
 }
 
-//header
-
-header {
-  background: black;
-  width: 100vw;
-  height: 80px;
-  position: fixed;
-  top:0;
-  z-index: 2;
-}
-img {
-  height: 62px;
-  width: 62px;
-  margin-left: 5vw;
-  margin-top: 0.6vh;
-}
-header p {
-  font-size: 80px;
-  margin-left: 5vw;
-  margin-top: 0.6vh;
-  letter-spacing: 5px;
-  font-family: muncieregular;
-}
-header nav.col{
-  float: right;
-  font-size: 16px;
-  font-family: 'PT sans';
-  margin-top: 1vh;
-  margin-bottom: 1vh;
-}
-a{
-  text-decoration: none;
-  margin-left: 2vw;
-  margin-right: 1vw;
-}
 button {
   font-size: 20px;
   letter-spacing: 3px;
@@ -90,6 +55,51 @@ button {
   height: 60px;
   color: #FFFFFF;
   border: none;
+}
+//.jumptarget::before {
+//  content:"";
+//  display:block;
+//  height:100px; /* fixed header height*/
+//  margin:-100px 0 0; /* negative fixed header height */
+//}
+
+//header
+
+header {
+  background: black;
+  width: 100vw;
+  height: 100px;
+  position: fixed;
+  top:0;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+}
+header img {
+  height: 62px;
+  width: 62px;
+  //margin-left: 3vw;
+}
+header p {
+  font-size: 80px;
+  margin-left: 5vw;
+  //margin-top: 0.6vh;
+  letter-spacing: 5px;
+  font-family: muncieregular;
+}
+header nav.col{
+  float: right;
+  font-size: 16px;
+  font-family: 'PT sans';
+  //margin-top: 1vh;
+  //margin-bottom: 1vh;
+}
+header a{
+  text-decoration: none;
+  margin-left: 2vw;
+  margin-right: 1vw;
+  :target{
+  }
 }
 
 header button{
@@ -193,6 +203,13 @@ main button.story{
 
 //section 4 of the site -- FRAGMENT
 
+main section.FRAGMENT:before{
+  content:"";
+  display:block;
+  height:100px; /* fixed header height*/
+  margin:-100px 0 0; /* negative fixed header height */
+  visibility: hidden;
+}
 main section.FRAGMENT{
   background: url("../images/2e58dbd47f9f310f97d956c8fd73a1c4.jpg") no-repeat;
   background-size: 80vw 90vh;
@@ -330,5 +347,22 @@ main section.FOUR{
       margin-top: 2vh;
       margin-left: 2vw;
     }
+  }
+}
+
+//footer
+
+footer {
+  height: 200px;
+  background: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-family: "PT sans";
+  font-size: 24px;
+  line-height: 32px;
+  img{
+    height: 62px;
+    width: 62px;
   }
 }
