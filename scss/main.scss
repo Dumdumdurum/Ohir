@@ -48,13 +48,17 @@ body {
 }
 
 button {
-  font-size: 20px;
+  font-size: 15px;
   letter-spacing: 3px;
   background-color: rgba(255, 89, 88, 0.75);
   width: 170px;
   height: 60px;
   color: #FFFFFF;
   border: none;
+}
+
+.border {
+  box-shadow: 0 2px 4px;
 }
 //.jumptarget::before {
 //  content:"";
@@ -76,8 +80,8 @@ header {
   align-items: center;
 }
 header img {
-  height: 62px;
-  width: 62px;
+  height: 59px;
+  width: 59px;
   //margin-left: 3vw;
 }
 header p {
@@ -103,7 +107,7 @@ header a{
 }
 
 header button{
-
+  font-size: 15px;
   margin-right: 35px;
   margin-left: 25px;
   background-color: black;
@@ -137,9 +141,10 @@ main section.OHIR{
   p{
     font-size: 280px;
     align-self: center;
+    letter-spacing: 5px;
     //margin-left: 30vw;
     //margin-right: 30vw;
-    text-shadow: -5px 0 #458b74;
+    text-shadow: -5px 0 #1E7F88;
     font-family: muncieregular;
   }
 }
@@ -159,12 +164,8 @@ section.ONBOARD {
     margin-left: -5vw;
   }
   div.border{
-    //padding-top: 40px;
-    //padding-bottom: 40px;
     align-self: center;
     margin-right: 2vw;
-    //padding-left: 5px;
-    //padding-right: 35px;
     padding: 40px 50px 40px 20px;
     background-color: rgba(30, 127, 136, 0.6);
   }
@@ -239,11 +240,19 @@ main section.FRAGMENT{
       font-size: 24px;
     }
     input {
-      width: 25vw;
+      width: 400px;
       height: 50px;
       color: #0d1a20;
       font-size: 24px;
       margin-top: 3vh;
+      border-radius: 5px;
+    }
+    button{
+      font-size: 23px;
+      font-family: "PT sans";
+      width: 420px;
+      margin-top: 25px;
+      letter-spacing: 5px;
     }
   }
   div.AUTHOR{
@@ -254,6 +263,7 @@ main section.FRAGMENT{
       text-align: center;
     }
     p{
+      text-align: center;
       font-size: 24px;
       margin-top: 2.5vh;
     }
@@ -272,7 +282,7 @@ main section.SHOP{
   align-items: center;
   img {
     height: 50vh;
-    width: 45vw;
+    width: 35vw;
   }
   div{
     display: flex;
@@ -289,6 +299,7 @@ main section.SHOP{
     }
     h3{
       flex-basis: 100%;
+      letter-spacing: 5px;
     }
     h2{
       margin-top: 1vh;
@@ -353,13 +364,13 @@ main section.FOUR{
 //footer
 
 footer {
-  height: 200px;
+  height: 100px;
   background: black;
   display: flex;
   align-items: center;
   justify-content: space-around;
   font-family: "PT sans";
-  font-size: 24px;
+  font-size: 16px;
   line-height: 32px;
   img{
     height: 62px;
