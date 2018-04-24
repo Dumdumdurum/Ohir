@@ -163,7 +163,7 @@ main {
   margin-right: 10vw;
   padding-top: 80px;
 }
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1200px) {
   main {
     width: 100vw;
     margin: 0;
@@ -177,6 +177,7 @@ main section.OHIR{
   background-size: 80vw 50vh;
   height: 35vh;
   display: flex;
+  flex-flow: row wrap;
   justify-content: center;
   align-items: center;
   p{
@@ -193,33 +194,39 @@ main section.OHIR{
 //section 2 of the site -- ONBOARD
 
 section.ONBOARD {
-  height: 60vh;
+  display: flex;
+  flex-flow: row wrap;
+  height: 80vh;
   background-image: url("../images/2e58dbd47f9f310f97d956c8fd73a1c4.jpg");
   background-repeat: no-repeat;
   background-size: 80vw 80vh;
-  @media only screen and (max-width: 1100px) {
+  @media only screen and (max-width: 1200px) {
     background-size: 100vw 80vh;
   }
   display: flex;
   justify-content: center;
   img{
-    height: 55vh;
-    width: 45vw;
+    //flex-basis: 50%;
+    height: 60vh;
+    width: 50vw;
     max-height: 600px;
     max-width: 800px;
     margin-left: -5vw;
   }
   div.border{
-    align-self: center;
-    margin-right: 2vw;
+    //flex-basis: 50%;
+    align-self: flex-start;
+    margin-top: 10vh;
+    margin-right: 20px;
     padding: 40px 50px 40px 20px;
     background-color: rgba(30, 127, 136, 0.6);
-  }
-  p{
-    font-family: "PT sans";
-    font-size: 20px;
-    color: #FFFFFF;
-    line-height: 36px;
+    width: 30vw;
+    p{
+      font-family: "PT sans";
+      font-size: 20px;
+      color: #FFFFFF;
+      line-height: 36px;
+    }
   }
   button{
     margin-top: 20px;
@@ -233,7 +240,7 @@ main section.STORY{
   background-repeat: no-repeat;
   background-size: 80vw 50vh;
   -webkit-background-origin: border;
-  @media only screen and (max-width: 1100px) {
+  @media only screen and (max-width: 1200px) {
     background-size: 100vw 50vh;
   }
   video{
@@ -242,7 +249,7 @@ main section.STORY{
     z-index: 5;
     display: none;
     object-fit: cover;
-    @media only screen and (max-width: 1100px) {
+    @media only screen and (max-width: 1200px) {
       width: 100vw;
       height: 60vh;
     }
@@ -262,7 +269,7 @@ main section.STORY{
 main section.FRAGMENT{
   background: url("../images/2e58dbd47f9f310f97d956c8fd73a1c4.jpg") no-repeat;
   background-size: 80vw 100vh;
-  @media only screen and (max-width: 1100px) {
+  @media only screen and (max-width: 1200px) {
     background-size: 100vw 100vh;
   }
   height: 100vh;
@@ -331,12 +338,12 @@ main section.SHOP{
   display: flex;
   justify-content: center;
   align-items: center;
-  @media only screen and (max-width: 1100px) {
+  @media only screen and (max-width: 1200px) {
     background-size: 100vw 50vh;
   }
   img {
     height: 50vh;
-    width: 35vw;
+    width: 40vw;
   }
   div{
     display: flex;
@@ -348,6 +355,7 @@ main section.SHOP{
     padding: 40px 50px 40px 20px;
     background-color: rgba(30, 127, 136, 0.6);
     margin-right: 2vw;
+    max-height: 45vh;
     span{
       flex-basis: 100%;
     }
@@ -380,12 +388,14 @@ main section.FOUR{
   display: flex;
   justify-content: center;
   align-items: center;
-  @media only screen and (max-width: 1100px) {
+  @media only screen and (max-width: 1200px) {
     background-size: 100vw 50vh;
   }
   img {
-    height: 50vh;
-    width: 40vw;
+    height: 60vh;
+    width: 45vw;
+    margin-top: 60px;
+    margin-left: -50px;
   }
   div{
     display: flex;
@@ -396,7 +406,7 @@ main section.FOUR{
     line-height: 36px;
     padding: 40px 50px 40px 20px;
     background-color: rgba(30, 127, 136, 0.6);
-    margin-left: 4vw;
+    margin-left: 20px;
     span{
       flex-basis: 100%;
     }
@@ -421,7 +431,7 @@ main section.FOUR{
 //footer
 
 footer {
-  height: 100px;
+  height: 110px;
   background: black;
   display: flex;
   align-items: center;
@@ -433,4 +443,109 @@ footer {
     height: 62px;
     width: 62px;
   }
+}
+
+//SLIDER
+#carousel {
+  position: relative;
+  width:60%;
+  margin:0 auto;
+  flex-basis: 100%;
+  display: flex;
+}
+
+#slides {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 250px;
+  margin-top: -100px;
+}
+
+#slides ul {
+  list-style: none;
+  width:100%;
+  height:250px;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+#slides li {
+  width:100%;
+  height:250px;
+  float:left;
+  text-align: center;
+  position: relative;
+  font-family: "PT sans";
+}
+/* Styling for prev and next buttons */
+.btn-bar{
+  display: block;
+  position: absolute;
+  //top: 40px;
+  width: 100vw;
+}
+
+#buttons {
+  padding:0 0 5px 0;
+}
+
+#buttons a {
+  text-align:center;
+  display:block;
+  font-size:50px;
+  float:left;
+  outline:0;
+  margin:0 60px;
+  color:#FFFFFF;
+  text-decoration:none;
+  display:block;
+  padding:9px;
+  width:35px;
+}
+a#prev{
+  margin-left: 8vw;
+  margin-right: 54vw;
+  @media only screen and (max-width: 1200px) {
+    margin-right: 70vw;
+  }
+}
+a#next{
+  //right: 0;
+}
+
+a#prev:hover, a#next:hover {
+  color:#FFF;
+  text-shadow:.5px 0px #b14943;
+  font-size: 60px;
+  transition: 0.3s;
+}
+
+.quote-phrase, .quote-author {
+  font-family: "PT sans";
+  font-weight:300;
+  display: table-cell;
+  vertical-align: middle;
+  padding: 5px 20px;
+  font-family:'Lato', Calibri, Arial, sans-serif;
+}
+
+.quote-phrase {
+  height: 200px;
+  font-size:30px;
+  color:#FFF;
+  text-shadow:.5px 0px #b14943;
+  font-family: "PT sans";
+}
+
+.quote-author {
+  font-style:normal;
+  font-size:30px;
+  color: #FFFFFF;
+}
+
+.quoteContainer, .authorContainer {
+  display: table;
+  width: 100%;
 }
