@@ -35,7 +35,7 @@ $(function() {
     $(document).ready(function () {
         //rotation speed and timer
         console.log('DOM');
-        var speed = 2000;
+        var speed = 5000;
 
         var run = setInterval(rotate, speed);
         var slides = $('.slide');
@@ -121,3 +121,12 @@ function prevFunction() {
 
 }
 
+$('#OVERLAY').click(function(){
+    console.log('hello');
+  $('.OVERLAY').toggleClass('hidden')
+});
+
+function hideOverlayFunction(){
+    console.log('bye');
+    $('.OVERLAY').toggleClass('hidden');
+}

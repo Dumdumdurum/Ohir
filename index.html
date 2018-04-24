@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Ohir</title>
+    <title>OHIR - Imprint Media</title>
     <link rel="stylesheet" href="./css/main.css">
     <link rel="shortcut icon" href="images/3d5bb643659eb0b2a80acbe35c5073e5.png">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
@@ -10,15 +10,21 @@
 <body>
     <header>
         <div class="container">
-            <img class="col" src="./images/Imprint%20Media_logo.svg">
+            <img class="col" id='OVERLAY' src="./images/Imprint%20Media_logo.svg">
             <p class="col">OHIR</p>
             <nav class="col">
-                <a href="#STORY">O książce</a>
+                <a href="#STORY">Książka</a>
+                <a href="#FRAGMENT">Fragment</a>
                 <a href="#AUTHOR">Autor</a>
-                <a href="#FRAGMENT">Pobierz fragment</a>
                 <button>KUPUJĘ</button>
             </nav>
         </div>
+        <section class="OVERLAY hidden">
+            <span>MODERNIST CUISINE</span>
+            <span>IMPRINT MEDIA</span>
+            <span>WYDAWNICTWO BARBELO</span>
+            <button  onclick="hideOverlayFunction()">POWRÓT</button>
+        </section>
     </header>
 
     <main>
@@ -48,7 +54,7 @@
                                 </p>
                             </div>
                             <div class="authorContainer">
-                                <p class="quote-author">HAL 9000</p>
+                                <p class="quote-author HAL">HAL 9000</p>
                             </div>
                         </li>
                         <li class="slide">
@@ -141,7 +147,6 @@
         </section>
 
     </main>
-
     <footer>
         <img class="col" src="./images/Imprint%20Media_logo.svg">
         <span>
