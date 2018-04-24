@@ -123,10 +123,11 @@ function prevFunction() {
 
 $('#OVERLAY').click(function(){
     console.log('hello');
-  $('.OVERLAY').toggleClass('hidden')
+  $('.OVERLAY').removeClass('hidden')
 });
 
 function hideOverlayFunction(){
     console.log('bye');
-    $('.OVERLAY').toggleClass('hidden');
+    $('.OVERLAY').addClass('hidden');
+
 }
