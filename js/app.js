@@ -35,7 +35,7 @@ $(function() {
     $(document).ready(function () {
         //rotation speed and timer
         console.log('DOM');
-        var speed = 500;
+        var speed = 8000;
 
         var run = setInterval(rotate, speed);
         var slides = $('.slide');
