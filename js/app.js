@@ -35,7 +35,7 @@ $(function() {
     $(document).ready(function () {
         //rotation speed and timer
         console.log('DOM');
-        var speed = 8000;
+        var speed = 2000;
 
         var run = setInterval(rotate, speed);
         var slides = $('.slide');
@@ -55,26 +55,23 @@ $(function() {
 
         $('#buttons a').click(function (e) {
             //slide the item
-            console.log('click');
 
             if (container.is(':animated')) {
                 return false;
             }
             if (e.target.id === prev) {
-                console.log('prev');
                 container.stop().animate({
                     'left': 0
-                }, 1500, function () {
+                }, 1000, function () {
                     container.find(elm + ':first').before(container.find(elm + ':last'));
                     resetSlides();
                 });
             }
 
             if (e.target.id === next) {
-                console.log('next');
                 container.stop().animate({
                     'left': item_width * -2
-                }, 1500, function () {
+                }, 1000, function () {
                     container.find(elm + ':last').after(container.find(elm + ':first'));
                     resetSlides();
                 });
@@ -86,7 +83,7 @@ $(function() {
         });
 
         //if mouse hover, pause the auto rotation, otherwise rotate it
-        container.parent().mouseenter(function () {
+        $('#carousel').mouseenter(function () {
             clearInterval(run);
         }).mouseleave(function () {
             run = setInterval(rotate, speed);
@@ -108,3 +105,19 @@ $(function() {
         $('#next').click();
     }
 });
+function nextFunction(){
+    var active = $('.active');
+    var last = $('.dot:last-child');
+    var first = $('.dot:first-child');
+    if(last.hasClass('active')){
+        last.removeClass('active');
+        first.addClass('active');
+    } else {
+        $('.active').next().addClass('active');
+        active.removeClass('active');
+    }
+}
+function prevFunction() {
+
+}
+

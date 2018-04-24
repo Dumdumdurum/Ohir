@@ -37,7 +37,7 @@
             </div>
             <div id="carousel">
                 <div class="btn-bar">
-                    <div id="buttons"><a id="prev" href="#"></a><a id="next" href="#"></a> </div>
+                    <div id="buttons"><a id="prev" href="#" onclick="prevFunction()"></a><a id="next" href="#" onclick="nextFunction()"></a> </div>
                 </div>
                 <div id="slides">
                     <ul>
@@ -50,12 +50,6 @@
                             <div class="authorContainer">
                                 <p class="quote-author">HAL 9000</p>
                             </div>
-                            <div class="counter">
-                                <span class="dot active"></span>
-                                <span class="dot"></span>
-                                <span class="dot"></span>
-                                <span class="dot"></span>
-                            </div>
                         </li>
                         <li class="slide">
                             <div class="quoteContainer">
@@ -66,10 +60,6 @@
                                 <p class="quote-author">Anakin Skywalker</p>
                             </div>
                             <div class="counter">
-                                <span class="dot"></span>
-                                <span class="dot active"></span>
-                                <span class="dot"></span>
-                                <span class="dot"></span>
                             </div>
                         </li>
                         <li class="slide">
@@ -80,10 +70,6 @@
                                 <p class="quote-author">Kapitan Jean-Luc Picard</p>
                             </div>
                             <div class="counter">
-                                <span class="dot"></span>
-                                <span class="dot"></span>
-                                <span class="dot active"></span>
-                                <span class="dot"></span>
                             </div>
                         </li>
                         <li class="slide">
@@ -93,14 +79,15 @@
                             <div class="authorContainer">
                                 <p class="quote-author">Admirał William Adama</p>
                             </div>
-                            <div class="counter">
-                                <span class="dot"></span>
-                                <span class="dot"></span>
-                                <span class="dot"></span>
-                                <span class="dot active"></span>
-                            </div>
                         </li>
                     </ul>
+
+                </div>
+                <div class="counter">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
                 </div>
             </div>
         </section>

@@ -453,7 +453,7 @@ footer {
   margin:50px auto;
   flex-basis: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   @media only screen and (max-width: 1200px) {
     width: 100vw;
   }
@@ -465,7 +465,6 @@ footer {
   width: 80vw;
   height: 250px;
   margin-top: -100px;
-  order: 2;
   @media only screen and (max-width: 1200px) {
     width: 100vw;
   }
@@ -561,6 +560,9 @@ a#prev:hover {
   padding: 5px 20px;
   font-family:'PT sans';
 }
+.quote-author{
+  letter-spacing: 5px;
+}
 
 .quote-phrase {
   height: 100px;
@@ -585,16 +587,20 @@ a#prev:hover {
 }
 
 .counter {
-  margin-top: 20px;
+  align-self: center;
+  position: absolute;
 }
 .dot {
-  height: 25px;
-  width: 25px;
+  transition: 0.5s;
+  margin-right: 10px;
+  height: 15px;
+  width: 15px;
   background-color: gray;
   border-radius: 50%;
   display: inline-block;
   margin-top: -200px;
 }
 .active {
+  transition: 0.5s;
   background-color: #FFFFFF;
 }
