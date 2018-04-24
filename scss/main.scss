@@ -8,7 +8,6 @@
 }
 .container{
   width:100%;
-  max-width: 1650px;
   margin:0 auto;
 }
 
@@ -56,10 +55,45 @@ button {
   color: #FFFFFF;
   border: none;
 }
+button:hover {
+  transition: 0.5s;
+  background-color: rgba(255, 89, 88, 1);
+}
 
 .border {
-  box-shadow: 0 2px 4px;
+  box-shadow: 0 2px 4px black;
 }
+
+a.anchor{
+  content:"";
+  display:block;
+  height:79px; /* fixed header height*/
+  margin:-79px 0 0; /* negative fixed header height */
+  visibility: hidden;
+}
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 65px; /* Place the button at the bottom of the page */
+  right: 70px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  background-color: rgba(30, 127, 136, 0.6);
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  height: 70px;
+  width: 70px;
+  border-radius: 50% 50%; /* Rounded corners */
+  :hover{
+    transition: 0.5s;
+    background-color: rgba(30, 127, 136, 1);
+  }
+  img{
+    height: 50px;
+    margin-top: -5px;
+  }
+}
+
 //.jumptarget::before {
 //  content:"";
 //  display:block;
@@ -72,50 +106,50 @@ button {
 header {
   background: black;
   width: 100vw;
-  height: 100px;
+  height: 80px;
   position: fixed;
   top:0;
-  z-index: 2;
   display: flex;
-  align-items: center;
+  //align-items: center;
 }
 header img {
   height: 59px;
   width: 59px;
-  //margin-left: 3vw;
+  margin-left: 60px;
+  margin-right: 60px;
+  margin-top: 10px;
 }
 header p {
   font-size: 80px;
-  margin-left: 5vw;
-  //margin-top: 0.6vh;
   letter-spacing: 5px;
   font-family: muncieregular;
+  margin-top: 5px;
 }
 header nav.col{
   float: right;
   font-size: 16px;
   font-family: 'PT sans';
-  //margin-top: 1vh;
-  //margin-bottom: 1vh;
 }
 header a{
   text-decoration: none;
-  margin-left: 2vw;
-  margin-right: 1vw;
-  :target{
-  }
+  margin-left: 15px;
+  margin-right: 10px;
 }
 
 header button{
   font-size: 15px;
   margin-right: 35px;
   margin-left: 25px;
+  margin-top: 15px;
   background-color: black;
   color: #ff5958;
+  height: 50px;
+  width: 140px;
   border: 2px solid rgba(255, 89, 88, 0.75);
 }
 
 header button:hover{
+  transition: 0.8s;
   background-color: #ff5958;
   color: #FFFFFF;
 }
@@ -129,18 +163,25 @@ main {
   margin-right: 10vw;
   padding-top: 80px;
 }
+@media only screen and (max-width: 1100px) {
+  main {
+    width: 100vw;
+    margin: 0;
+  }
+}
 
 //section 1 of the site -- OHIR
 
 main section.OHIR{
   background-image: url('../images/30db76930842ded693c4c674590e84dd.jpg');
   background-size: 80vw 50vh;
-  height: 40vh;
+  height: 35vh;
   display: flex;
   justify-content: center;
+  align-items: center;
   p{
     font-size: 280px;
-    align-self: center;
+    //align-self: center;
     letter-spacing: 5px;
     //margin-left: 30vw;
     //margin-right: 30vw;
@@ -156,11 +197,16 @@ section.ONBOARD {
   background-image: url("../images/2e58dbd47f9f310f97d956c8fd73a1c4.jpg");
   background-repeat: no-repeat;
   background-size: 80vw 80vh;
+  @media only screen and (max-width: 1100px) {
+    background-size: 100vw 80vh;
+  }
   display: flex;
   justify-content: center;
   img{
     height: 55vh;
     width: 45vw;
+    max-height: 600px;
+    max-width: 800px;
     margin-left: -5vw;
   }
   div.border{
@@ -187,34 +233,39 @@ main section.STORY{
   background-repeat: no-repeat;
   background-size: 80vw 50vh;
   -webkit-background-origin: border;
-  width: 80vw;
+  @media only screen and (max-width: 1100px) {
+    background-size: 100vw 50vh;
+  }
+  video{
+    width: 80vw;
+    height: 50vh;
+    z-index: 5;
+    display: none;
+    object-fit: cover;
+    @media only screen and (max-width: 1100px) {
+      width: 100vw;
+      height: 60vh;
+    }
+  }
   height: 50vh;
   margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-main button.story{
-  background-color: rgba(255, 89, 88, 0.75);
-  color: #FFFFFF;
-  border: none;
+  button{
   width: 550px;
+  }
 }
 
 //section 4 of the site -- FRAGMENT
 
-main section.FRAGMENT:before{
-  content:"";
-  display:block;
-  height:100px; /* fixed header height*/
-  margin:-100px 0 0; /* negative fixed header height */
-  visibility: hidden;
-}
 main section.FRAGMENT{
   background: url("../images/2e58dbd47f9f310f97d956c8fd73a1c4.jpg") no-repeat;
-  background-size: 80vw 90vh;
-  height: 90vh;
+  background-size: 80vw 100vh;
+  @media only screen and (max-width: 1100px) {
+    background-size: 100vw 100vh;
+  }
+  height: 100vh;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -274,12 +325,15 @@ main section.FRAGMENT{
 //section 5 of the page -- SHOP
 
 main section.SHOP{
-  background: url("../images/30db76930842ded693c4c674590e84dd.jpg");
-  background-position:  60% 33%;
+  background: url("../images/800a32708fa0b963090eedc5984d0b11.png") no-repeat;
   height: 50vh;
+  background-size: 80vw 50vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  @media only screen and (max-width: 1100px) {
+    background-size: 100vw 50vh;
+  }
   img {
     height: 50vh;
     width: 35vw;
@@ -320,12 +374,15 @@ main section.SHOP{
 
 main section.FOUR{
 
-  background: url("../images/30db76930842ded693c4c674590e84dd.jpg");
-  background-position:  25% 20%;
+  background: url("../images/6be9b44d2734ae87b6612b66e1cfab7a.png") no-repeat;
   height: 50vh;
+  background-size: 80vw 50vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  @media only screen and (max-width: 1100px) {
+    background-size: 100vw 50vh;
+  }
   img {
     height: 50vh;
     width: 40vw;
