@@ -37,7 +37,7 @@ gulp.task('rwd', function() { // funkcja callback
         .pipe(sourcemaps.write())
         .pipe(gulp.dest('css')) // --> gdzie laduja
         .pipe(browserSync.stream())
-})
+});
 
 
 

@@ -59,7 +59,7 @@ button {
   color: #FFFFFF;
   border: none;
   cursor: pointer;
-  @media only screen and (max-width: 800px) {
+  @media only screen and (max-width: 600px) {
     font-size: 11px;
     letter-spacing: 2px;
   }
@@ -119,9 +119,9 @@ header {
   position: fixed;
   top:0;
   display: flex;
-  z-index: 6;
+  z-index: 400;
   //align-items: center;
-  @media only screen and (max-width: 800px) {
+  @media only screen and (max-width: 600px) {
     height: 60px;
   }
 }
@@ -132,25 +132,23 @@ header img {
   margin-right: 60px;
   margin-top: 10px;
   cursor: pointer;
-  @media only screen and (max-width: 800px) {
+  @media only screen and (max-width: 600px) {
     margin-left: 15px;
     margin-top: 14px;
-    height: 48px;
-    width: 48px;
+    height: 32px;
+    width: 32px;
     margin-right: auto;
   }
 }
-header img:hover {
 
-}
 header div.ohir {
   font-size: 80px;
   letter-spacing: 5px;
   font-family: muncieregular;
   margin-top: 5px;
-  @media only screen and (max-width: 800px) {
+  @media only screen and (max-width: 600px) {
     margin: 11px auto;
-    font-size: 70px;
+    font-size: 50px;
     width: 100px;
   }
 }
@@ -158,7 +156,10 @@ header nav.col{
   float: right;
   font-size: 16px;
   font-family: 'PT sans';
-  @media only screen and (max-width: 800px) {
+  @media only screen and (max-width: 730px) {
+    font-size: 10px;
+  }
+  @media only screen and (max-width: 600px) {
     display: none;
   }
 }
@@ -183,13 +184,18 @@ header button{
   height: 50px;
   width: 140px;
   border: 2px solid rgba(255, 89, 88, 1);
+  @media only screen and (max-width: 730px) {
+    width: 100px;
+    font-size: 11px;
+    margin-left: 15px;
+    margin-right: 25px;
+  }
 }
 
 header button:hover{
   transition: 0.8s;
   background-color: #ff5958;
   color: #FFFFFF;
-
 }
 
 //main site
@@ -200,6 +206,9 @@ main {
   margin-left: 10vw;
   margin-right: 10vw;
   padding-top: 80px;
+  @media only screen and (max-width: 600px) {
+    padding-top: 60px;
+  }
 }
 @media only screen and (max-width: 1200px) {
   main {
@@ -218,7 +227,7 @@ main section.OHIR{
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
-  @media only screen and (max-width: 800px) {
+  @media only screen and (max-width: 600px) {
     background: url('../images/Mobile Page Slices/pexels-photo-287229-(1).png') no-repeat;
     background-size: 100vw 200px;
     height: 200px;
@@ -231,7 +240,7 @@ main section.OHIR{
     //margin-right: 30vw;
     text-shadow: -5px 0 #1E7F88;
     font-family: muncieregular;
-    @media only screen and (max-width: 800px) {
+    @media only screen and (max-width: 600px) {
       display: none;
     }
   }
@@ -249,7 +258,7 @@ section.ONBOARD {
   @media only screen and (max-width: 1200px) {
     background-size: 100vw 80vh;
   }
-  @media only screen and (max-width: 800px) {
+  @media only screen and (max-width: 600px) {
     height: 309px;
   }
   display: flex;
@@ -261,7 +270,7 @@ section.ONBOARD {
     max-height: 600px;
     max-width: 800px;
     margin-left: -5vw;
-    @media only screen and (max-width: 800px) {
+    @media only screen and (max-width: 600px) {
       height: 230px;
       width: 280px;
       margin-top: -170px;
@@ -275,7 +284,7 @@ section.ONBOARD {
     padding: 40px 50px 40px 20px;
     background-color: rgba(30, 127, 136, 0.6);
     width: 30vw;
-    @media only screen and (max-width: 800px) {
+    @media only screen and (max-width: 600px) {
       height: 106px;
       width: 290px;
       margin-left: 15px;
@@ -289,7 +298,7 @@ section.ONBOARD {
       font-size: 20px;
       color: #FFFFFF;
       line-height: 36px;
-      @media only screen and (max-width: 800px) {
+      @media only screen and (max-width: 600px) {
         font-size:13px;
         letter-spacing: 0;
         line-height: 20px;
@@ -299,7 +308,7 @@ section.ONBOARD {
   button{
     margin-top: 20px;
     width: 140px;
-    @media only screen and (max-width: 800px) {
+    @media only screen and (max-width: 600px) {
       height: 33px;
       width: 87px;
       font-size: 12px;
@@ -321,8 +330,10 @@ main section.STORY{
   @media only screen and (max-width: 1200px) {
     background-size: 100vw 50vh;
   }
-  @media only screen and (max-width: 800px) {
+  @media only screen and (max-width: 600px) {
     background: url("../images/Mobile Page Slices/abstract-art-artistic-247676.png") no-repeat;
+    background-size: 320px 149px;
+    background-position: center;
     height: 149px;
   }
   video{
@@ -343,7 +354,7 @@ main section.STORY{
   align-items: center;
   button{
   width: 380px;
-    @media only screen and (max-width: 800px) {
+    @media only screen and (max-width: 600px) {
       height: 36px;
       width: 250px;
     }
@@ -358,6 +369,13 @@ main section.FRAGMENT{
   @media only screen and (max-width: 1200px) {
     background-size: 100vw 100vh;
   }
+  @media only screen and (max-width: 600px) {
+    height: 344px;
+    background: url("../images/Mobile Page Slices/astronomy-evening-exploration-962095-(1).png") no-repeat;
+    background-size: 100vw 344px;
+    flex-flow: column;
+    align-items: center;
+  }
   height: 100vh;
   display: flex;
   flex-flow: row wrap;
@@ -369,6 +387,11 @@ main section.FRAGMENT{
     margin-top: -5vh;
     margin-left: -1vw;
     z-index: 6;
+    @media only screen and (max-width: 600px) {
+      height: 150px;
+      width: 250px;
+      margin-top: -90px;
+    }
   }
   div.col{
     z-index: 6;
@@ -377,13 +400,31 @@ main section.FRAGMENT{
     color: #FFFFFF;
     line-height: 36px;
     margin-right: 5vw;
-    span{
+    @media only screen and (max-width: 600px) {
+      margin: -10px auto;
+      width: 240px;
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+    }
+    h3{
       font-size: 30px;
       letter-spacing: 5px;
+      @media only screen and (max-width: 600px) {
+        font-size: 14px;
+        letter-spacing: 2px;
+        text-align: center;
+      }
     }
     p{
       margin-top: 3vh;
       font-size: 20px;
+      @media only screen and (max-width: 600px) {
+        font-size: 13px;
+        line-height: 20px;
+        margin-top: -11px;
+        text-align: center;
+      }
     }
     input {
       width: 400px;
@@ -395,6 +436,13 @@ main section.FRAGMENT{
       padding-left: 10px;
       font-family: "PT sans";
       font-size: 20px;
+      @media only screen and (max-width: 600px) {
+        height: 34px;
+        width: 145px;
+        font-size: 13px;
+        margin-top: 10px;
+        margin-left: 0;
+      }
     }
     button{
       font-size: 15px;
@@ -402,10 +450,20 @@ main section.FRAGMENT{
       width: 300px;
       margin-top: 25px;
       letter-spacing: 5px;
+      @media only screen and (max-width: 600px) {
+        width: 174px;
+        height: 36px;
+        font-size: 12px;
+        letter-spacing: 2px;
+        margin-top: 10px;
+      }
     }
   }
   div.AUTHOR{
     width: 50vw;
+    @media only screen and (max-width: 600px) {
+      display: none;
+    }
     h3{
       font-size: 30px;
       letter-spacing: 5px;
@@ -420,6 +478,40 @@ main section.FRAGMENT{
 
 }
 
+//section 4.5 MOBILE ONLY -- author
+
+section.mobile{
+  display: none;
+  @media only screen and (max-width: 600px) {
+    display: flex;
+    justify-content: center;
+    height: 204px;
+    background: url("../images/Mobile Page Slices/astronomy-evening-exploration-962095-(1) copy 2.png") no-repeat;
+    -webkit-background-size: 100vw 204px;
+    background-size: 100vw 204px;
+  }
+  div {
+    @media only screen and (max-width: 600px) {
+      font-family: "PT sans";
+      text-align: center;
+      padding-top: 15px;
+      width: 305px;
+    }
+    p{
+      @media only screen and (max-width: 600px) {
+        font-size: 13px;
+        line-height: 20px;
+        letter-spacing: 0;
+        margin-top: 15px;
+      }
+    }
+    h3 {
+      font-size: 14px;
+      letter-spacing: 2px;
+    }
+  }
+}
+
 //section 5 of the page -- SHOP
 
 main section.SHOP{
@@ -432,9 +524,18 @@ main section.SHOP{
   @media only screen and (max-width: 1200px) {
     background-size: 100vw 50vh;
   }
+  @media only screen and (max-width: 600px) {
+    height: 334px;
+    flex-flow: column;
+  }
   img {
     height: 50vh;
     width: 40vw;
+    @media only screen and (max-width: 600px) {
+      height: 210px;
+      width: 210px;
+      margin-top: -10px;
+    }
   }
   div{
     display: flex;
@@ -447,12 +548,26 @@ main section.SHOP{
     background-color: rgba(30, 127, 136, 0.6);
     margin-right: 2vw;
     max-height: 45vh;
+    @media only screen and (max-width: 600px) {
+      height: 149px;
+      width: 290px;
+      font-size: 13px;
+      margin: 0;
+      margin-bottom: 15px;
+      padding: 0;
+    }
     span{
       flex-basis: 100%;
+      @media only screen and (max-width: 600px) {
+        font-size: 13px;
+        letter-spacing: 0;
+        line-height: 20px;
+      }
     }
     h3{
       flex-basis: 100%;
-      letter-spacing: 5px;
+      letter-spacing: 2px;
+      margin-left: 22px;
     }
     h2{
       margin-top: 1vh;
@@ -461,12 +576,23 @@ main section.SHOP{
       font-size: 64px;
       line-height: 76px;
       letter-spacing: 5px;
+      @media only screen and (max-width: 600px) {
+        font-size: 20px;
+        margin-top: 0;
+        mergin-left: 22px;
+        line-height: 24px;
+      }
     }
     button{
       margin-top: 2.3vh;
       margin-left: 2vw;
       height: 50px;
       width: 140px;
+      @media only screen and (max-width: 600px) {
+        height: 33px;
+        width: 87px;
+        margin: 0;
+      }
     }
   }
 }
@@ -563,7 +689,7 @@ footer {
   @media only screen and (max-width: 1200px) {
     width: 100vw;
   }
-  @media only screen and (max-width: 800px) {
+  @media only screen and (max-width: 600px) {
     margin-top: -60px;
   }
 }
@@ -619,7 +745,7 @@ a#prev{
   border-bottom: 1px solid white;
   border-left: 1px solid white;
   transform: rotate(45deg);
-  @media only screen and (max-width: 800px) {
+  @media only screen and (max-width: 600px) {
     display: none;
   }
 }
@@ -630,7 +756,7 @@ a#next{
   border-top: 1px solid white;
   border-right: 1px solid white;
   transform: rotate(45deg);
-  @media only screen and (max-width: 800px) {
+  @media only screen and (max-width: 600px) {
     display: none;
   }
 }
@@ -650,7 +776,7 @@ a#prev:hover {
 }
 .authorContainer{
   margin-top: -20px;
-  @media only screen and (max-width: 800px) {
+  @media only screen and (max-width: 600px) {
     margin-top: -30px;
   }
 }
@@ -671,7 +797,7 @@ a#prev:hover {
 }
 .HAL{
   letter-spacing: 5px;
-  @media only screen and (max-width: 800px) {
+  @media only screen and (max-width: 600px) {
     letter-spacing: 2px;
   }
 }
@@ -682,7 +808,7 @@ a#prev:hover {
   color:#FFF;
   text-shadow:.5px 0px #b14943;
   font-family: "PT sans";
-  @media only screen and (max-width: 800px) {
+  @media only screen and (max-width: 600px) {
     font-size: 12px;
   }
 }
@@ -691,7 +817,7 @@ a#prev:hover {
   font-style:normal;
   font-size:22px;
   color: #FFFFFF;
-  @media only screen and (max-width: 800px) {
+  @media only screen and (max-width: 600px) {
     font-size: 12px;
   }
 }
@@ -718,7 +844,7 @@ a#prev:hover {
   border-radius: 50%;
   display: inline-block;
   //margin-top: -550px;
-  @media only screen and (max-width: 800px) {
+  @media only screen and (max-width: 600px) {
     height: 8px;
     width: 8px;
     margin-right: 4px;
