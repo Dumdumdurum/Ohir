@@ -1,5 +1,9 @@
 //general settings
 
+html{
+  scroll-behavior: smooth;
+}
+
 *{
   margin: 0;
   padding: 0;
@@ -54,6 +58,11 @@ button {
   height: 60px;
   color: #FFFFFF;
   border: none;
+  cursor: pointer;
+  @media only screen and (max-width: 800px) {
+    font-size: 11px;
+    letter-spacing: 2px;
+  }
 }
 button:hover {
   transition: 0.5s;
@@ -75,7 +84,7 @@ a.anchor{
 #myBtn {
   display: none; /* Hidden by default */
   position: fixed; /* Fixed/sticky position */
-  bottom: 45px; /* Place the button at the bottom of the page */
+  bottom: 65px; /* Place the button at the bottom of the page */
   right: 47px; /* Place the button 30px from the right */
   z-index: 99; /* Make sure it does not overlap */
   background-color: rgba(30, 127, 136, 0.6);
@@ -112,6 +121,9 @@ header {
   display: flex;
   z-index: 6;
   //align-items: center;
+  @media only screen and (max-width: 800px) {
+    height: 60px;
+  }
 }
 header img {
   height: 59px;
@@ -119,22 +131,46 @@ header img {
   margin-left: 60px;
   margin-right: 60px;
   margin-top: 10px;
+  cursor: pointer;
+  @media only screen and (max-width: 800px) {
+    margin-left: 15px;
+    margin-top: 14px;
+    height: 48px;
+    width: 48px;
+    margin-right: auto;
+  }
 }
-header p {
+header img:hover {
+
+}
+header div.ohir {
   font-size: 80px;
   letter-spacing: 5px;
   font-family: muncieregular;
   margin-top: 5px;
+  @media only screen and (max-width: 800px) {
+    margin: 11px auto;
+    font-size: 70px;
+    width: 100px;
+  }
 }
 header nav.col{
   float: right;
   font-size: 16px;
   font-family: 'PT sans';
+  @media only screen and (max-width: 800px) {
+    display: none;
+  }
 }
 header a{
   text-decoration: none;
   margin-left: 15px;
   margin-right: 10px;
+  cursor: pointer;
+}
+header a:hover{
+  color: rgba(255, 89, 88, 1);
+  transition: 0.5s;
 }
 
 header button{
@@ -146,13 +182,14 @@ header button{
   color: #ff5958;
   height: 50px;
   width: 140px;
-  border: 2px solid rgba(255, 89, 88, 0.75);
+  border: 2px solid rgba(255, 89, 88, 1);
 }
 
 header button:hover{
   transition: 0.8s;
   background-color: #ff5958;
   color: #FFFFFF;
+
 }
 
 //main site
@@ -181,6 +218,11 @@ main section.OHIR{
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
+  @media only screen and (max-width: 800px) {
+    background: url('../images/Mobile Page Slices/pexels-photo-287229-(1).png') no-repeat;
+    background-size: 100vw 200px;
+    height: 200px;
+  }
   p{
     font-size: 280px;
     //align-self: center;
@@ -189,6 +231,9 @@ main section.OHIR{
     //margin-right: 30vw;
     text-shadow: -5px 0 #1E7F88;
     font-family: muncieregular;
+    @media only screen and (max-width: 800px) {
+      display: none;
+    }
   }
 }
 
@@ -204,6 +249,9 @@ section.ONBOARD {
   @media only screen and (max-width: 1200px) {
     background-size: 100vw 80vh;
   }
+  @media only screen and (max-width: 800px) {
+    height: 309px;
+  }
   display: flex;
   justify-content: center;
   img{
@@ -213,6 +261,11 @@ section.ONBOARD {
     max-height: 600px;
     max-width: 800px;
     margin-left: -5vw;
+    @media only screen and (max-width: 800px) {
+      height: 230px;
+      width: 280px;
+      margin-top: -170px;
+    }
   }
   div.border{
     //flex-basis: 50%;
@@ -222,15 +275,39 @@ section.ONBOARD {
     padding: 40px 50px 40px 20px;
     background-color: rgba(30, 127, 136, 0.6);
     width: 30vw;
+    @media only screen and (max-width: 800px) {
+      height: 106px;
+      width: 290px;
+      margin-left: 15px;
+      margin-right: 15px;
+      margin-top: 0;
+      margin-bot: 0;
+      padding: 5px 0 5px 5px;
+    }
     p{
       font-family: "PT sans";
       font-size: 20px;
       color: #FFFFFF;
       line-height: 36px;
+      @media only screen and (max-width: 800px) {
+        font-size:13px;
+        letter-spacing: 0;
+        line-height: 20px;
+      }
     }
   }
   button{
     margin-top: 20px;
+    width: 140px;
+    @media only screen and (max-width: 800px) {
+      height: 33px;
+      width: 87px;
+      font-size: 12px;
+      letter-spacing: 2px;
+      margin-top: 10px;
+      margin-left: 96.5px;
+      margin-right: 101.5px;
+    }
   }
 }
 
@@ -244,6 +321,10 @@ main section.STORY{
   @media only screen and (max-width: 1200px) {
     background-size: 100vw 50vh;
   }
+  @media only screen and (max-width: 800px) {
+    background: url("../images/Mobile Page Slices/abstract-art-artistic-247676.png") no-repeat;
+    height: 149px;
+  }
   video{
     width: 80vw;
     height: 50vh;
@@ -252,7 +333,7 @@ main section.STORY{
     object-fit: cover;
     @media only screen and (max-width: 1200px) {
       width: 100vw;
-      height: 60vh;
+      height: 50vh;
     }
   }
   height: 50vh;
@@ -261,7 +342,11 @@ main section.STORY{
   justify-content: center;
   align-items: center;
   button{
-  width: 550px;
+  width: 380px;
+    @media only screen and (max-width: 800px) {
+      height: 36px;
+      width: 250px;
+    }
   }
 }
 
@@ -283,8 +368,10 @@ main section.FRAGMENT{
     width: 45vw;
     margin-top: -5vh;
     margin-left: -1vw;
+    z-index: 6;
   }
   div.col{
+    z-index: 6;
     width: 30vw;
     margin-top: 8vh;
     color: #FFFFFF;
@@ -296,23 +383,23 @@ main section.FRAGMENT{
     }
     p{
       margin-top: 3vh;
-      font-size: 24px;
+      font-size: 20px;
     }
     input {
       width: 400px;
       height: 50px;
       color: #0d1a20;
-      font-size: 24px;
+      font-size: 20px;
       margin-top: 3vh;
       border-radius: 5px;
-      padding-left: 3px;
+      padding-left: 10px;
       font-family: "PT sans";
       font-size: 20px;
     }
     button{
-      font-size: 23px;
+      font-size: 15px;
       font-family: "PT sans";
-      width: 420px;
+      width: 300px;
       margin-top: 25px;
       letter-spacing: 5px;
     }
@@ -326,7 +413,7 @@ main section.FRAGMENT{
     }
     p{
       text-align: center;
-      font-size: 24px;
+      font-size: 20px;
       margin-top: 2.5vh;
     }
   }
@@ -476,7 +563,9 @@ footer {
   @media only screen and (max-width: 1200px) {
     width: 100vw;
   }
-
+  @media only screen and (max-width: 800px) {
+    margin-top: -60px;
+  }
 }
 
 #slides ul {
@@ -530,6 +619,9 @@ a#prev{
   border-bottom: 1px solid white;
   border-left: 1px solid white;
   transform: rotate(45deg);
+  @media only screen and (max-width: 800px) {
+    display: none;
+  }
 }
 a#next{
   right: 0;
@@ -538,6 +630,9 @@ a#next{
   border-top: 1px solid white;
   border-right: 1px solid white;
   transform: rotate(45deg);
+  @media only screen and (max-width: 800px) {
+    display: none;
+  }
 }
 a#next:hover {
   transition: 0.3s;
@@ -555,6 +650,9 @@ a#prev:hover {
 }
 .authorContainer{
   margin-top: -20px;
+  @media only screen and (max-width: 800px) {
+    margin-top: -30px;
+  }
 }
 
 //a#prev:hover, a#next:hover {
@@ -573,6 +671,9 @@ a#prev:hover {
 }
 .HAL{
   letter-spacing: 5px;
+  @media only screen and (max-width: 800px) {
+    letter-spacing: 2px;
+  }
 }
 
 .quote-phrase {
@@ -581,12 +682,18 @@ a#prev:hover {
   color:#FFF;
   text-shadow:.5px 0px #b14943;
   font-family: "PT sans";
+  @media only screen and (max-width: 800px) {
+    font-size: 12px;
+  }
 }
 
 .quote-author {
   font-style:normal;
   font-size:22px;
   color: #FFFFFF;
+  @media only screen and (max-width: 800px) {
+    font-size: 12px;
+  }
 }
 
 .quoteContainer, .authorContainer {
@@ -611,6 +718,11 @@ a#prev:hover {
   border-radius: 50%;
   display: inline-block;
   //margin-top: -550px;
+  @media only screen and (max-width: 800px) {
+    height: 8px;
+    width: 8px;
+    margin-right: 4px;
+  }
 }
 .active {
   transition: 1.26s;
@@ -620,7 +732,7 @@ a#prev:hover {
 //overlay
 
 section.OVERLAY{
-  background-color: rgba(30, 127, 136, 0.6);
+  background-color: rgba(30, 127, 136, 0.9);
   height: 99vh;
   width: 99vw;
   position: fixed;
@@ -635,6 +747,10 @@ section.OVERLAY{
   font-size: 60px;
   font-family: "PT sans";
   letter-spacing: 5px;
+  span:hover{
+    transition: 0.5s;
+    text-shadow: -2px 2px 2px #000000;
+  }
   button{
     margin-top: 50px;
     height: 100px;
@@ -642,6 +758,7 @@ section.OVERLAY{
     background-color: rgba(255, 89, 88, 0.75);
     color: #FFFFFF;
     font-size: 40px;
+    border: none;
   }
   button:hover{
       background-color: rgba(255, 89, 88, 1);
