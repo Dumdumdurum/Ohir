@@ -97,6 +97,9 @@ a.anchor{
     height: 50px;
     margin-top: -5px;
   }
+  @media only screen and (max-width: 600px) {
+    visibility: hidden;
+  }
 }
 #myBtn:hover{
   transition: 0.5s;
@@ -346,6 +349,10 @@ main section.STORY{
       width: 100vw;
       height: 50vh;
     }
+    @media only screen and (max-width: 600px) {
+      height: 149px;
+      width: auto;
+    }
   }
   height: 50vh;
   margin: 0;
@@ -527,14 +534,16 @@ main section.SHOP{
   @media only screen and (max-width: 600px) {
     height: 334px;
     flex-flow: column;
+    background: url("../images/Mobile Page Slices/f810afc8e915910e56ffa6ca42b76749.png") no-repeat;
+    background-size: 100vw 334px;
   }
   img {
     height: 50vh;
     width: 40vw;
     @media only screen and (max-width: 600px) {
-      height: 210px;
-      width: 210px;
-      margin-top: -10px;
+      height: 240px;
+      width: 240px;
+      margin-top: -120px;
     }
   }
   div{
@@ -549,11 +558,12 @@ main section.SHOP{
     margin-right: 2vw;
     max-height: 45vh;
     @media only screen and (max-width: 600px) {
+      position: absolute;
       height: 149px;
       width: 290px;
       font-size: 13px;
       margin: 0;
-      margin-bottom: 15px;
+      margin-top: 80px;
       padding: 0;
     }
     span{
@@ -562,12 +572,18 @@ main section.SHOP{
         font-size: 13px;
         letter-spacing: 0;
         line-height: 20px;
+        margin-left: 12px;
+        margin-top: -10px;
       }
     }
     h3{
       flex-basis: 100%;
-      letter-spacing: 2px;
-      margin-left: 22px;
+      letter-spacing: 5px;
+      @media only screen and (max-width: 600px) {
+        letter-spacing: 2px;
+        margin-left: 22px;
+        font-size: 14px;
+      }
     }
     h2{
       margin-top: 1vh;
@@ -577,9 +593,10 @@ main section.SHOP{
       line-height: 76px;
       letter-spacing: 5px;
       @media only screen and (max-width: 600px) {
-        font-size: 20px;
+        letter-spacing: 3px;
+        font-size: 36px;
         margin-top: 0;
-        mergin-left: 22px;
+        margin-left: 23px;
         line-height: 24px;
       }
     }
@@ -592,12 +609,15 @@ main section.SHOP{
         height: 33px;
         width: 87px;
         margin: 0;
+        margin-left: 15px;
+        margin-top: -6px;
+        letter-spacing: 2px;
       }
     }
   }
 }
 
-//section 6 of the page -- FOUR
+//section 6 of the page -- BUY FOUR
 
 main section.FOUR{
 
@@ -610,11 +630,24 @@ main section.FOUR{
   @media only screen and (max-width: 1200px) {
     background-size: 100vw 50vh;
   }
+  @media only screen and (max-width: 600px) {
+    height: 334px;
+    flex-flow: column;
+    background: url("../images/Mobile Page Slices/pexels-photo-287229-(1) copy.png") no-repeat;
+    background-size: 100vw 334px;
+  }
   img {
     height: 60vh;
     width: 45vw;
     margin-top: 60px;
     margin-left: -50px;
+    @media only screen and (max-width: 600px) {
+      margin: 0;
+      height: 200px;
+      width: 280px;
+      position: absolute;
+      margin-top: -60px
+    }
   }
   div{
     display: flex;
@@ -626,12 +659,32 @@ main section.FOUR{
     padding: 40px 50px 40px 20px;
     background-color: rgba(30, 127, 136, 0.6);
     margin-left: 20px;
+    @media only screen and (max-width: 600px) {
+      height: 149px;
+      width: 290px;
+      padding: 0;
+      margin: 0;
+      margin-top: 100px;
+      z-index: 5;
+    }
     span{
       flex-basis: 100%;
+      @media only screen and (max-width: 600px) {
+        font-size: 13px;
+        letter-spacing: 0;
+        line-height: 20px;
+        margin-left: 12px;
+        margin-top: -10px;
+      }
     }
     h3{
       flex-basis: 100%;
       letter-spacing: 5px;
+      @media only screen and (max-width: 600px) {
+        letter-spacing: 2px;
+        margin-left: 22px;
+        font-size: 14px;
+      }
     }
     h2{
       margin-top: 1.5vh;
@@ -640,12 +693,27 @@ main section.FOUR{
       font-size: 64px;
       line-height: 76px;
       letter-spacing: 5px;
+      @media only screen and (max-width: 600px) {
+        letter-spacing: 3px;
+        font-size: 36px;
+        margin-top: 0;
+        margin-left: 23px;
+        line-height: 24px;
+      }
     }
     button{
       margin-top: 2.5vh;
       margin-left: 2vw;
       height: 50px;
       width: 140px;
+      @media only screen and (max-width: 600px) {
+        height: 33px;
+        width: 87px;
+        margin: 0;
+        margin-left: 15px;
+        margin-top: -6px;
+        letter-spacing: 2px;
+      }
     }
   }
 }
@@ -661,9 +729,33 @@ footer {
   font-family: "PT sans";
   font-size: 16px;
   line-height: 24px;
+  @media only screen and (max-width: 600px) {
+    flex-flow: column;
+    justify-content: center;
+    height: 244px;
+    font-size: 11px;
+    line-height: 16px;
+    margin: 0;
+    text-align: center;
+    padding-top: 23px;
+    padding-bottom: 23px;
+  }
+  .line{
+    display: none;
+    @media only screen and (max-width: 600px) {
+      display: block;
+      border-top: 1px solid white;
+      width: 52px;
+      margin-top: 12px;
+      margin-bottom: 12px;
+    }
+  }
   img{
     height: 62px;
     width: 62px;
+    @media only screen and (max-width: 600px) {
+      display: none;
+    }
   }
 }
 
@@ -691,6 +783,7 @@ footer {
   }
   @media only screen and (max-width: 600px) {
     margin-top: -60px;
+    height: 150px;
   }
 }
 
@@ -799,6 +892,7 @@ a#prev:hover {
   letter-spacing: 5px;
   @media only screen and (max-width: 600px) {
     letter-spacing: 2px;
+    font-size: 12px;
   }
 }
 
