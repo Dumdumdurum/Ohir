@@ -223,7 +223,8 @@ main {
 
 main section.OHIR{
   background: url('../images/30db76930842ded693c4c674590e84dd.jpg') no-repeat;
-  background-size: 100% 350px;
+  background-size: cover;
+  background-position: center;
   height: 350px;
   display: flex;
   //flex-flow: row wrap;
@@ -256,11 +257,12 @@ section.ONBOARD {
   height: 600px;
   background-image: url("../images/2e58dbd47f9f310f97d956c8fd73a1c4.jpg");
   background-repeat: no-repeat;
-  background-size: 100% 600px;
+  background-size: cover;
+  background-position: center;
   position: relative;
-  @media only screen and (max-width: 1200px) {
-    background-size: 100% 800px;
-  }
+  //@media only screen and (max-width: 1200px) {
+  //  background-size: 100% 800px;
+  //}
   @media only screen and (max-width: 720px) {
     height: 309px;
     background-size: 100vw 309px;
@@ -346,14 +348,16 @@ section.ONBOARD {
 main section.STORY{
   background-image: url("../images/ae2254c7a20031b453a409bb2edbbbe5.png");
   background-repeat: no-repeat;
-  background-size: 100% 500px;
+  background-size: cover;
+  background-position: center;
   -webkit-background-origin: border;
-  @media only screen and (max-width: 1200px) {
-    background-size: 100% 500px;
-  }
+  //@media only screen and (max-width: 1200px) {
+  //  background-size: cover;
+  //  background
+  //}
   @media only screen and (max-width: 720px) {
     background: url("../images/Mobile Page Slices/abstract-art-artistic-247676.png") no-repeat;
-    background-size: 320px 149px;
+    //background-size: 320px 149px;
     background-position: center;
     height: 149px;
   }
@@ -391,7 +395,8 @@ main section.STORY{
 
 main section.FRAGMENT{
   background: url("../images/2e58dbd47f9f310f97d956c8fd73a1c4.jpg") no-repeat;
-  background-size: 100% 1000px;
+  background-size: cover;
+  background-position: center;
   @media only screen and (max-width: 1200px) {
     background-size: 100% 1000px;
   }
@@ -553,15 +558,13 @@ section.mobile{
 
 main section.SHOP{
   background: url("../images/800a32708fa0b963090eedc5984d0b11.png") no-repeat;
-  height: 500px;
-  background-size: 100% 500px;
+  height: 700px;
+  background-size: cover;
+  background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row nowrap;
-  @media only screen and (max-width: 1200px) {
-    background-size: 100% 500px;
-  }
   @media only screen and (max-width: 720px) {
     height: 334px;
     flex-flow: column;
@@ -665,16 +668,14 @@ main section.SHOP{
 
 main section.FOUR{
   background: url("../images/6be9b44d2734ae87b6612b66e1cfab7a.png") no-repeat;
-  height: 500px;
-  background-size: 100% 500px;
+  height: 700px;
+  background-size: cover;
+  background-position: center;
   display: flex;
   //justify-content: center;
   align-items: center;
   flex-flow: row nowrap;
   position: relative;
-  @media only screen and (max-width: 1200px) {
-    background-size: 100% 500px;
-  }
   @media only screen and (max-width: 720px) {
     height: 334px;
     flex-flow: column;
