@@ -49,6 +49,7 @@ h2, h3{
 body {
   background-color: #0d1a20;
   background-size: cover;
+  display: table;
 }
 
 button {
@@ -291,7 +292,7 @@ section.ONBOARD {
     margin-right: 80px;
     padding: 30px 0 40px 20px;
     background-color: rgba(30, 127, 136, 0.6);
-    max-height: 640px;
+    height: 200px;
     margin-left: 40px;
     //width: 40vw;
     flex-grow: 1;
@@ -555,7 +556,7 @@ main section.SHOP{
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
   @media only screen and (max-width: 1200px) {
     background-size: 100% 500px;
   }
@@ -573,6 +574,9 @@ main section.SHOP{
     background: url("../images/a8a55dd1e1eb8c665306c70db665bd66.png") no-repeat;
     background-size: 500px 500px;
     background-position: -100px;
+    position: relative;
+    margin-right: auto;
+    display: inline;
     @media only screen and (max-width: 720px) {
       height: 240px;
       width: 240px;
@@ -585,7 +589,7 @@ main section.SHOP{
   div.border{
     height: 300px;
     display: flex;
-    width: 500px;
+    //width: 500px;
     flex-flow: row wrap;
     font-family: "PT sans";
     font-size: 20px;
@@ -658,14 +662,14 @@ main section.SHOP{
 //section 6 of the page -- BUY FOUR
 
 main section.FOUR{
-
   background: url("../images/6be9b44d2734ae87b6612b66e1cfab7a.png") no-repeat;
   height: 500px;
   background-size: 100% 500px;
   display: flex;
   //justify-content: center;
   align-items: center;
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
+  position: relative;
   @media only screen and (max-width: 1200px) {
     background-size: 100% 500px;
   }
@@ -677,11 +681,17 @@ main section.FOUR{
   }
   div.book {
     background: url("../images/d339cb60296e12e86b8d910851590674.png") no-repeat;
-    background-size: 700px 100%;
-    height: 530px;
-    width: 640px;
-    margin-top: 160px;
+    background-size: 800px 100%;
+    order: 2;
+    flex-grow: 1;
+    height: 580px;
+    width: 740px;
+    display: inline;
+    //vertical-align: middl;
+    margin-right: 20px;
     margin-left: -75px;
+    position: relative;
+    margin-top: 70px;
     //float: left;
     //margin-right: 20px;
     @media only screen and (max-width: 720px) {
@@ -694,12 +704,16 @@ main section.FOUR{
     }
   }
   div.border{
+    flex-grow: 3;
+    float: left;
     display: flex;
-    flex-flow: row wrap;
-    max-width: 510px;
+    flex-flow: column;
+    position: relative;
+    //max-width: 610px;
     //flex-direction: column;
     font-family: "PT sans";
     font-size: 20px;
+    float: left;
     line-height: 36px;
     padding: 40px 50px 40px 20px;
     background-color: rgba(30, 127, 136, 0.6);
@@ -767,7 +781,7 @@ main section.FOUR{
 
 footer {
   height: 150px;
-  width: 100vw;
+  width: 100%;
   background: black;
   display: flex;
   align-items: center;
@@ -883,6 +897,7 @@ footer {
   width:35px;
 }
 a#prev{
+  cursor: pointer;
   left: 0;
   width: 40px;
   height: 40px;
@@ -894,6 +909,7 @@ a#prev{
   }
 }
 a#next{
+  cursor: pointer;
   right: 0;
   width: 40px;
   height: 40px;
