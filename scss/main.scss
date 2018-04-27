@@ -254,7 +254,7 @@ main section.OHIR{
 section.ONBOARD {
   display: flex;
   flex-flow: row wrap;
-  height: 600px;
+  height: 700px;
   background-image: url("../images/2e58dbd47f9f310f97d956c8fd73a1c4.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -265,17 +265,18 @@ section.ONBOARD {
   //}
   @media only screen and (max-width: 720px) {
     height: 309px;
-    background-size: 100vw 309px;
+    background-size: cover;
+    background-position: center;
     justify-content: center;
   }
   display: flex;
   //justify-content: flex-end;
   div.book{
     //flex-basis: 50%;
-    background: url("../images/62d204dec2048b53e33842d869865586.png") no-repeat;
-    background-size: 700px 400px;
-    background-position: -80px;
-    height: 400px;
+    background: url("../images/Ohir_front_back.png") no-repeat;
+    background-size: 700px 467px;
+    background-position: -80px -10px;
+    height: 600px;
     width: 490px;
     //float: left;
     //margin-left: -200px;
@@ -362,15 +363,11 @@ main section.STORY{
     height: 149px;
   }
   video{
-    width: 80vw;
+    width: 100%;
     height: 500px;
     z-index: 5;
     display: none;
     object-fit: cover;
-    @media only screen and (max-width: 1200px) {
-      width: 100vw;
-      height: 500px;
-    }
     @media only screen and (max-width: 720px) {
       max-height: 150px;
       width: auto;
@@ -501,7 +498,7 @@ main section.FRAGMENT{
     }
   }
   div.AUTHOR{
-    width: 50vw;
+    width: 50%;
     margin-top: 0px;
     @media only screen and (max-width: 720px) {
       display: none;
@@ -558,7 +555,7 @@ section.mobile{
 
 main section.SHOP{
   background: url("../images/800a32708fa0b963090eedc5984d0b11.png") no-repeat;
-  height: 700px;
+  height: 500px;
   background-size: cover;
   background-position: center;
   display: flex;
@@ -573,15 +570,15 @@ main section.SHOP{
   }
   div.book {
     //display: inline-block;
-    height: 500px;
-    width: 500px;
+    height: 580px;
+    width: 1460px;
     position: relative;
-    background: url("../images/a8a55dd1e1eb8c665306c70db665bd66.png") no-repeat;
-    background-size: 500px 500px;
-    background-position: -100px;
+    background: url("../images/Ohir_single_book.png") no-repeat;
+    background-size: 585px 580px;
+    background-position: 50px;
     position: relative;
     margin-right: auto;
-    display: inline;
+    display: inline-block;
     @media only screen and (max-width: 720px) {
       height: 240px;
       width: 240px;
@@ -594,6 +591,7 @@ main section.SHOP{
   div.border{
     height: 300px;
     display: flex;
+    //flex-grow: 0.5;
     //width: 500px;
     flex-flow: row wrap;
     font-family: "PT sans";
@@ -668,7 +666,7 @@ main section.SHOP{
 
 main section.FOUR{
   background: url("../images/6be9b44d2734ae87b6612b66e1cfab7a.png") no-repeat;
-  height: 700px;
+  height: 500px;
   background-size: cover;
   background-position: center;
   display: flex;
@@ -683,17 +681,17 @@ main section.FOUR{
     background-size: 100% 334px;
   }
   div.book {
-    background: url("../images/d339cb60296e12e86b8d910851590674.png") no-repeat;
-    background-size: 800px 100%;
+    background: url("../images/Ohir_set_of_books.png") no-repeat;
+    background-size: 840px 560px;
     order: 2;
     flex-grow: 1;
     height: 580px;
-    width: 740px;
+    width: 800px;
     display: inline;
-    margin-right: 20px;
-    margin-left: -75px;
+    //margin-right: 40px;
+    margin-left: -95px;
     position: relative;
-    margin-top: 70px;
+    margin-top: 100px;
     @media only screen and (max-width: 720px) {
       margin: 0;
       height: 200px;
@@ -742,7 +740,7 @@ main section.FOUR{
         margin-left: 22px;
         font-size: 14px;
         margin-bottom: 10px;
-        margin-top: -5px;
+        //margin-top: -5px;
       }
     }
     div.priceROW{
@@ -838,15 +836,12 @@ footer {
 //SLIDER
 #carousel {
   position: relative;
-  width:80vw;
+  width:100%;
   margin:100px auto;
-  margin-top: 120px;
+  margin-top: 10px;
   flex-basis: 100%;
   display: flex;
   justify-content: center;
-  @media only screen and (max-width: 1200px) {
-    width: 100%;
-  }
   @media only screen and (max-width: 720px) {
     position: absolute;
     margin-top: 230px;
@@ -856,12 +851,12 @@ footer {
 #slides {
   overflow: hidden;
   position: relative;
-  width: 80vw;
+  width: 100%;
   height: 250px;
   margin-top: -100px;
-  @media only screen and (max-width: 1200px) {
-    width: 100vw;
-  }
+  //@media only screen and (max-width: 1200px) {
+  //  width: 100vw;
+  //}
   @media only screen and (max-width: 720px) {
     margin-top: -60px;
     height: 150px;
@@ -888,9 +883,9 @@ footer {
 /* Styling for prev and next buttons */
 .btn-bar{
   position: absolute;
-  width: 80vw;
+  width: 100%;
   @media only screen and (max-width: 1200px) {
-    width: 100vw;
+    width: 100%;
   }
   z-index: 4;
 }
@@ -1002,9 +997,9 @@ a#prev:hover {
 
 .quoteContainer, .authorContainer {
   display: table;
-  width: 80vw;
+  width: 100%;
   @media only screen and (max-width: 1200px) {
-    width: 100vw;
+    width: 100%;
   }
 }
 .authorContainer{
@@ -1017,6 +1012,11 @@ a#prev:hover {
   align-self: center;
   position: absolute;
   margin-top: -40px;
+  padding: 50px;
+  :last-child{
+    margin-right: 0;
+  }
+  //width: 100%;
 }
 .dot {
   transition: 1.26s;
