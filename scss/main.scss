@@ -107,13 +107,6 @@ a.anchor{
   background-color: rgba(30, 127, 136, 1);
 }
 
-//.jumptarget::before {
-//  content:"";
-//  display:block;
-//  height:100px; /* fixed header height*/
-//  margin:-100px 0 0; /* negative fixed header height */
-//}
-
 //header
 
 header {
@@ -124,7 +117,6 @@ header {
   top:0;
   display: flex;
   z-index: 400;
-  //align-items: center;
   @media only screen and (max-width: 720px) {
     height: 60px;
   }
@@ -153,7 +145,8 @@ header div.ohir {
   @media only screen and (max-width: 720px) {
     margin: 11px auto;
     font-size: 50px;
-    width: 100px;
+    width: 67px;
+    text-align: center;
   }
 }
 header nav.col{
@@ -209,9 +202,11 @@ main {
   background: black;
   margin-left: 10vw;
   margin-right: 10vw;
+  min-width: 1100px;
   padding-top: 80px;
   @media only screen and (max-width: 720px) {
     padding-top: 60px;
+    min-width: 0;
   }
 }
 @media only screen and (max-width: 1200px) {
@@ -224,16 +219,16 @@ main {
 //section 1 of the site -- OHIR
 
 main section.OHIR{
-  background-image: url('../images/30db76930842ded693c4c674590e84dd.jpg');
-  background-size: 80vw 350px;
+  background: url('../images/30db76930842ded693c4c674590e84dd.jpg') no-repeat;
+  background-size: 100% 350px;
   height: 350px;
   display: flex;
-  flex-flow: row wrap;
+  //flex-flow: row wrap;
   justify-content: center;
   align-items: center;
   @media only screen and (max-width: 720px) {
     background: url('../images/Mobile Page Slices/pexels-photo-287229-(1).png') no-repeat;
-    background-size: 100vw 200px;
+    background-size: 100% 200px;
     height: 200px;
   }
   p{
@@ -255,45 +250,55 @@ main section.OHIR{
 section.ONBOARD {
   display: flex;
   flex-flow: row wrap;
-  height: 800px;
+  height: 600px;
   background-image: url("../images/2e58dbd47f9f310f97d956c8fd73a1c4.jpg");
   background-repeat: no-repeat;
-  background-size: 80vw 800px;
+  background-size: 100% 600px;
+  position: relative;
   @media only screen and (max-width: 1200px) {
-    background-size: 100vw 800px;
+    background-size: 100% 800px;
   }
   @media only screen and (max-width: 720px) {
     height: 309px;
     background-size: 100vw 309px;
+    justify-content: center;
   }
   display: flex;
-  justify-content: center;
-  img{
+  //justify-content: flex-end;
+  div.book{
     //flex-basis: 50%;
-    height: 500px;
-    width: 40vw;
-    min-width: 540px;
-    max-height: 600px;
-    max-width: 800px;
-    margin-left: -90px;
+    background: url("../images/62d204dec2048b53e33842d869865586.png") no-repeat;
+    background-size: 700px 400px;
+    background-position: -80px;
+    height: 400px;
+    width: 490px;
+    //float: left;
+    //margin-left: -200px;
+    position: relative;
+    margin-right: auto;
+    display: inline;
     @media only screen and (max-width: 720px) {
       position: absolute;
       height: 220px;
       width: 280px;
-      margin-top: -170px;
-      margin-left: 0;
-      min-width: 0;
+      background-size: 280px 220px;
+      background-position: 0;
+      margin: -170px auto;
     }
   }
   div.border{
-    //flex-basis: 50%;
-    align-self: flex-start;
-    margin-top: 100px;
-    margin-right: 20px;
-    padding: 40px 50px 40px 20px;
+    margin-top: 110px;
+    margin-right: 80px;
+    padding: 30px 0 40px 20px;
     background-color: rgba(30, 127, 136, 0.6);
-    width: 30vw;
-    max-height: 500px;
+    max-height: 640px;
+    margin-left: 40px;
+    //width: 40vw;
+    flex-grow: 1;
+    z-index: 1;
+    //float: right;
+    position: relative;
+    //margin-left: -50px;
     @media only screen and (max-width: 720px) {
       height: 106px;
       width: 290px;
@@ -303,6 +308,7 @@ section.ONBOARD {
       //margin-bot: 0;
       padding: 5px 0 5px 5px;
       position: absolute;
+      margin: 0;
       margin-top: 60px;
     }
     p{
@@ -337,10 +343,10 @@ section.ONBOARD {
 main section.STORY{
   background-image: url("../images/ae2254c7a20031b453a409bb2edbbbe5.png");
   background-repeat: no-repeat;
-  background-size: 80vw 500px;
+  background-size: 100% 500px;
   -webkit-background-origin: border;
   @media only screen and (max-width: 1200px) {
-    background-size: 100vw 500px;
+    background-size: 100% 500px;
   }
   @media only screen and (max-width: 720px) {
     background: url("../images/Mobile Page Slices/abstract-art-artistic-247676.png") no-repeat;
@@ -359,7 +365,7 @@ main section.STORY{
       height: 500px;
     }
     @media only screen and (max-width: 720px) {
-      height: 149px;
+      max-height: 150px;
       width: auto;
     }
   }
@@ -370,6 +376,7 @@ main section.STORY{
   align-items: center;
   button{
   width: 380px;
+    z-index: 7;
     @media only screen and (max-width: 720px) {
       height: 36px;
       width: 250px;
@@ -381,14 +388,14 @@ main section.STORY{
 
 main section.FRAGMENT{
   background: url("../images/2e58dbd47f9f310f97d956c8fd73a1c4.jpg") no-repeat;
-  background-size: 80vw 1000px;
+  background-size: 100% 1000px;
   @media only screen and (max-width: 1200px) {
-    background-size: 100vw 1000px;
+    background-size: 100% 1000px;
   }
   @media only screen and (max-width: 720px) {
     height: 344px;
     background: url("../images/Mobile Page Slices/astronomy-evening-exploration-962095-(1).png") no-repeat;
-    background-size: 100vw 344px;
+    background-size: 100% 344px;
     flex-flow: column;
     align-items: center;
   }
@@ -397,28 +404,32 @@ main section.FRAGMENT{
   flex-flow: row wrap;
   justify-content: center;
   font-family: "PT sans";
-  img{
-    height: 600px;
-    width: 45vw;
-    max-width: 800px;
-    min-width: 400px;
-    margin-top: -80px;
-    margin-left: -15px;
+  div.book{
+    background: url("../images/5775b3515a3f87c3dff03741c6afa199.png") no-repeat;
+    height: 580px;
+    width: 540px;
+    background-size: 580px 580px;
+    margin-top: -65px;
+    margin-left: -135px;
     z-index: 6;
     @media only screen and (max-width: 720px) {
       height: 150px;
       width: 250px;
+      background-size: 250px 150px;
       min-width: 0;
-      margin-top: -90px;
+      margin: 0;
+      margin-top: -30px;
     }
   }
   div.col{
     z-index: 6;
-    width: 30vw;
-    margin-top: 8vh;
+    flex-grow: 1;
+    max-width: 450px;
+    margin-top: 70px;
+    margin-left: 40px;
     color: #FFFFFF;
     line-height: 36px;
-    margin-right: 5vw;
+    margin-right: 30px;
     @media only screen and (max-width: 720px) {
       margin: -10px auto;
       width: 240px;
@@ -510,8 +521,8 @@ section.mobile{
     justify-content: center;
     height: 204px;
     background: url("../images/Mobile Page Slices/astronomy-evening-exploration-962095-(1) copy 2.png") no-repeat;
-    -webkit-background-size: 100vw 204px;
-    background-size: 100vw 204px;
+    -webkit-background-size: 100% 204px;
+    background-size: 100% 204px;
   }
   div {
     @media only screen and (max-width: 720px) {
@@ -540,38 +551,49 @@ section.mobile{
 main section.SHOP{
   background: url("../images/800a32708fa0b963090eedc5984d0b11.png") no-repeat;
   height: 500px;
-  background-size: 80vw 500px;
+  background-size: 100% 500px;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-flow: row wrap;
   @media only screen and (max-width: 1200px) {
-    background-size: 100vw 500px;
+    background-size: 100% 500px;
   }
   @media only screen and (max-width: 720px) {
     height: 334px;
     flex-flow: column;
     background: url("../images/Mobile Page Slices/f810afc8e915910e56ffa6ca42b76749.png") no-repeat;
-    background-size: 100vw 334px;
+    background-size: 100% 334px;
   }
-  img {
+  div.book {
+    //display: inline-block;
     height: 500px;
-    width: 40vw;
+    width: 500px;
+    position: relative;
+    background: url("../images/a8a55dd1e1eb8c665306c70db665bd66.png") no-repeat;
+    background-size: 500px 500px;
+    background-position: -100px;
     @media only screen and (max-width: 720px) {
       height: 240px;
       width: 240px;
+      background-size: 240px 240px;
+      background-position: 0;
+      margin: 0;
       margin-top: -120px;
     }
   }
-  div{
+  div.border{
+    height: 300px;
     display: flex;
+    width: 500px;
     flex-flow: row wrap;
-    //flex-direction: column;
     font-family: "PT sans";
     font-size: 20px;
     line-height: 36px;
-    padding: 40px 50px 40px 20px;
+    padding: 40px 20px 40px 20px;
     background-color: rgba(30, 127, 136, 0.6);
-    margin-right: 2vw;
+    margin-right: 40px;
+    position: relative;
     //max-height: 45vh;
     @media only screen and (max-width: 720px) {
       position: absolute;
@@ -639,35 +661,42 @@ main section.FOUR{
 
   background: url("../images/6be9b44d2734ae87b6612b66e1cfab7a.png") no-repeat;
   height: 500px;
-  background-size: 80vw 500px;
+  background-size: 100% 500px;
   display: flex;
-  justify-content: center;
+  //justify-content: center;
   align-items: center;
+  flex-flow: row wrap;
   @media only screen and (max-width: 1200px) {
-    background-size: 100vw 500px;
+    background-size: 100% 500px;
   }
   @media only screen and (max-width: 720px) {
     height: 334px;
     flex-flow: column;
     background: url("../images/Mobile Page Slices/pexels-photo-287229-(1) copy.png") no-repeat;
-    background-size: 100vw 334px;
+    background-size: 100% 334px;
   }
-  img {
-    height: 600px;
-    width: 45vw;
-    margin-top: 60px;
-    margin-left: -50px;
+  div.book {
+    background: url("../images/d339cb60296e12e86b8d910851590674.png") no-repeat;
+    background-size: 700px 100%;
+    height: 530px;
+    width: 640px;
+    margin-top: 160px;
+    margin-left: -75px;
+    //float: left;
+    //margin-right: 20px;
     @media only screen and (max-width: 720px) {
       margin: 0;
       height: 200px;
       width: 280px;
+      background-size: 280px 200px;
       position: absolute;
-      margin-top: -60px
+      //margin-top: -60px
     }
   }
-  div{
+  div.border{
     display: flex;
     flex-flow: row wrap;
+    max-width: 510px;
     //flex-direction: column;
     font-family: "PT sans";
     font-size: 20px;
@@ -680,7 +709,7 @@ main section.FOUR{
       width: 290px;
       padding: 0;
       margin: 0;
-      margin-top: 100px;
+      margin-top: 150px;
       z-index: 5;
     }
     span{
@@ -780,7 +809,8 @@ footer {
 #carousel {
   position: relative;
   width:80vw;
-  margin:50px auto;
+  margin:100px auto;
+  margin-top: 120px;
   flex-basis: 100%;
   display: flex;
   justify-content: center;
