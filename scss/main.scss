@@ -118,33 +118,50 @@ header {
   position: fixed;
   top:0;
   display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
   z-index: 400;
   @media only screen and (max-width: 720px) {
     height: 60px;
   }
   //overflow: hidden;
 }
-header img {
+header div.logo {
+  background: url("../images/Imprint Media_logo.svg") no-repeat;
+  background-size: 59px 59px;
+  background-position: center;
+  display: inline-block;
+  margin-bottom: 7px;
   height: 59px;
   width: 59px;
   margin-left: 60px;
   margin-right: 60px;
-  margin-top: 10px;
   cursor: pointer;
+  @-moz-document url-prefix() {
+    margin-bottom: 14px;
+  }
   @media only screen and (max-width: 720px) {
     margin-left: 15px;
     margin-top: 14px;
     height: 32px;
     width: 32px;
+    background-size: 32px 32px;
     margin-right: auto;
   }
 }
+div.logo:hover {
+  transition: 0.5s;
+  background: url("../images/99d9eefddcc4522a0a28257e5bf39789.png") no-repeat;
+  background-size: 59px 59px;
+}
 
 header div.ohir {
+  display: inline-block;
   font-size: 80px;
   letter-spacing: 5px;
   font-family: muncieregular;
   margin-top: 5px;
+  align-items: center;
   @media only screen and (max-width: 720px) {
     margin: 11px auto;
     font-size: 50px;
@@ -404,7 +421,7 @@ main section.FRAGMENT{
     flex-flow: column;
     align-items: center;
   }
-  height: 1000px;
+  height: 900px;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -499,7 +516,7 @@ main section.FRAGMENT{
   }
   div.AUTHOR{
     width: 50%;
-    margin-top: 0px;
+    margin-top: -130px;
     @media only screen and (max-width: 720px) {
       display: none;
     }
@@ -1046,6 +1063,7 @@ section.OVERLAY{
   height: 99vh;
   width: 99vw;
   position: fixed;
+  top: 0;
   z-index: 500;
   margin: 0;
   padding: 0;
@@ -1057,7 +1075,7 @@ section.OVERLAY{
   font-size: 60px;
   font-family: "PT sans";
   letter-spacing: 5px;
-  span:hover{
+  a:hover{
     transition: 0.5s;
     text-shadow: -2px 2px 2px #000000;
   }
