@@ -72,16 +72,16 @@ button:hover {
 a.anchor{
   content:"";
   display:block;
-  height:79px; /* fixed header height*/
-  margin:-79px 0 0; /* negative fixed header height */
+  height:115px; /* fixed header height*/
+  margin:-115px 0 0; /* negative fixed header height */
   visibility: hidden;
 }
 
 #myBtn {
   display: none; /* Hidden by default */
   position: fixed; /* Fixed/sticky position */
-  bottom: 65px; /* Place the button at the bottom of the page */
-  right: 47px; /* Place the button 30px from the right */
+  bottom: 185px; /* Place the button at the bottom of the page */
+  right: 87px; /* Place the button 30px from the right */
   z-index: 99; /* Make sure it does not overlap */
   background-color: rgba(30, 127, 136, 0.6);
   cursor: pointer; /* Add a mouse pointer on hover */
@@ -187,7 +187,7 @@ header a:hover{
 }
 
 header button{
-  font-size: 24px;
+  font-size: 20px;
   margin-right: 35px;
   margin-left: 25px;
   margin-top: 15px;
@@ -237,7 +237,7 @@ main {
 //section 1 of the site -- OHIR
 
 main section.OHIR{
-  background: url('../images/30db76930842ded693c4c674590e84dd.jpg') no-repeat;
+  background: url('../images/Ohir_header.jpg') no-repeat;
   background-size: cover;
   background-position: center;
   height: 418px;
@@ -270,7 +270,7 @@ section.ONBOARD {
   display: flex;
   flex-flow: row wrap;
   height: 789px;
-  background-image: url("../images/2e58dbd47f9f310f97d956c8fd73a1c4.jpg");
+  background-image: url("../images/space-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -412,7 +412,7 @@ main section.STORY{
 //section 4 of the site -- FRAGMENT
 
 main section.FRAGMENT{
-  background: url("../images/2e58dbd47f9f310f97d956c8fd73a1c4.jpg") no-repeat;
+  background: url("../images/space-bg.jpg") no-repeat;
   background-size: cover;
   background-position: center;
   //@media only screen and (max-width: 1200px) {
@@ -504,7 +504,7 @@ main section.FRAGMENT{
       }
     }
     button{
-      font-size: 24px;
+      font-size: 20px;
       font-family: "PT sans";
       width: 327px;
       height: 54px;
@@ -630,6 +630,7 @@ main section.SHOP{
       position: absolute;
       height: 149px;
       width: 290px;
+      min-width: 0px;
       font-size: 13px;
       margin: 0;
       margin-top: 80px;
@@ -707,7 +708,7 @@ main section.FOUR{
   }
   div.book {
     background: url("../images/Ohir_set_of_books.png") no-repeat;
-    background-size: 1040px 693px;
+    background-size: 1040px 643px;
     order: 2;
     flex-grow: 1;
     height: 700px;
@@ -743,6 +744,7 @@ main section.FOUR{
     @media only screen and (max-width: 720px) {
       height: 149px;
       width: 290px;
+      min-width: 0;
       padding: 0;
       margin: 0;
       margin-top: 150px;
@@ -756,7 +758,7 @@ main section.FOUR{
         letter-spacing: 0;
         line-height: 20px;
         margin-left: 12px;
-        margin-top: -50px;
+        margin-top: -20px;
       }
     }
     h3{
@@ -766,7 +768,7 @@ main section.FOUR{
         letter-spacing: 2px;
         margin-left: 22px;
         font-size: 14px;
-        margin-bottom: 10px;
+        //margin-bottom: 40px;
         //margin-top: -5px;
       }
     }
@@ -781,7 +783,7 @@ main section.FOUR{
     }
     h2{
       display: block;
-      margin-top: 10px;
+      margin-top: 40px;
       height: 80px;
       display: table;
       font-family: muncieregular;
@@ -792,13 +794,13 @@ main section.FOUR{
       @media only screen and (max-width: 720px) {
         letter-spacing: 3px;
         font-size: 36px;
-        margin-top: 0;
+        margin-top: 55px;
         margin-left: 23px;
         line-height: 24px;
       }
     }
     button{
-      margin-bottom: -10px;
+      margin-bottom: -40px;
       margin-left: 20px;
       height: 54px;
       width: 158px;
@@ -807,11 +809,11 @@ main section.FOUR{
         width: 87px;
         margin: 0;
         margin-left: 113px;
-        margin-top: -30px;
+        //margin-top: -10px;
         letter-spacing: 2px;
         position: absolute;
         @-moz-document url-prefix() {
-          margin-top: -62px;
+          margin-top: -8px;
         }
       }
     }
@@ -824,7 +826,8 @@ footer {
   position: absolute;
   top: 3875px;
   height: 214px;
-  width: 100%;
+  width: 100vw;
+  min-width: 1440px;
   background: black;
   display: flex;
   align-items: center;
@@ -837,6 +840,7 @@ footer {
     flex-flow: column;
     justify-content: center;
     height: 244px;
+    min-width: 0;
     font-size: 11px;
     line-height: 16px;
     margin: 0;
@@ -854,9 +858,14 @@ footer {
       margin-bottom: 12px;
     }
   }
-  img{
-    height: 62px;
-    width: 62px;
+  div.logo{
+    background: url("../images/Imprint Media_logo.svg") no-repeat;
+    background-size: 55px 55px;
+    background-position: center;
+    margin-bottom: 7px;
+    height: 55px;
+    width: 55px;
+    cursor: pointer;
     @media only screen and (max-width: 720px) {
       display: none;
     }
@@ -1090,7 +1099,6 @@ section.OVERLAY{
   letter-spacing: 5px;
   a:hover{
     transition: 0.5s;
-    text-shadow: -2px 2px 2px #000000;
   }
   button{
     margin-top: 50px;

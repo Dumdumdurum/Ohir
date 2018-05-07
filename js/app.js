@@ -131,13 +131,34 @@ function prevFunction() {
 
 }
 
-$('#OVERLAY').click(function(){
+function showOverlayFunction(){
     console.log('hello');
-  $('.OVERLAY').removeClass('hidden')
-});
+    $('.OVERLAY').removeClass('hidden')
+}
 
 function hideOverlayFunction(){
-    console.log('bye');
     $('.OVERLAY').addClass('hidden');
-
 }
+
+
+var hideButton = document.getElementById('hideOverlay');
+// console.log(hideButton);
+// hideButton.onclick = function() {
+//     console.log('byebye');
+// };
+hideButton.onclick = function (ev) {
+    // console.log('no bye');
+    hideOverlayFunction();
+
+    if (!ev) {
+        // Old versions of Internet Explorer do not pass the event to handlers.
+        ev = window.event;
+        console.log('bleh')
+    }
+    ev.cancelBubble = true;
+    if (ev.stopPropagation) {
+        // W3C standard, works in Chrome, Firefox, Safari, etc.
+        ev.stopPropagation();
+    }
+};
+
