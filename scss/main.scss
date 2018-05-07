@@ -132,11 +132,11 @@ header div.logo {
   margin-right: 75px;
   cursor: pointer;
   @-moz-document url-prefix() {
-    margin-bottom: 14px;
+    margin-bottom: 20px;
   }
   @media only screen and (max-width: 720px) {
     margin-left: 15px;
-    margin-top: 14px;
+    margin-top: 10px;
     margin-right: 0;
     height: 32px;
     width: 32px;
@@ -148,6 +148,11 @@ div.logo:hover {
   transition: 0.5s;
   background: url("../images/99d9eefddcc4522a0a28257e5bf39789.png") no-repeat;
   background-size: 55px 55px;
+  @media only screen and (max-width: 720px) {
+    transition: 2.5s;
+    background: url("../images/99d9eefddcc4522a0a28257e5bf39789.png") no-repeat;
+    background-size: 32px 32px;
+  }
 }
 
 header div.ohir {
@@ -157,16 +162,23 @@ header div.ohir {
   font-family: muncieregular;
   margin-top: 5px;
   align-items: center;
+  @-moz-document url-prefix() {
+    margin-top: 15px;
+  }
   @media only screen and (max-width: 720px) {
-    margin: 11px auto;
+    position: absolute;
+    margin: 5px 30%;
     font-size: 50px;
     width: 67px;
     text-align: center;
+    @-moz-document url-prefix() {
+      margin-top: 8px;
+    }
   }
 }
 header nav.col{
   float: right;
-  font-size: 16px;
+  font-size: 20px;
   font-family: 'PT sans';
   @media only screen and (max-width: 730px) {
     font-size: 10px;
