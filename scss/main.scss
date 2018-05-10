@@ -403,7 +403,8 @@ main section.OHIR{
   and (min-device-width: 414px)
   and (max-device-width: 736px)
   and (-webkit-min-device-pixel-ratio: 3) {
-
+    background-size: 100% 200px;
+    height: 200px;
   }
   p{
     font-size: 280px;
@@ -2052,6 +2053,23 @@ section.OVERLAY{
   font-size: 60px;
   font-family: "PT sans";
   letter-spacing: 5px;
+  @media only screen and (max-width: 720px) {
+    font-size: 14px;
+    line-height: 30px;
+  }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 568px)
+  and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 40/71)
+  {
+    font-size: 14px;
+    line-height: 30px;
+  }
+  @media only screen
+  and (min-device-width: 414px)
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 3) {
+    font-size: 14px;
+    line-height: 30px;
+  }
   a:hover{
     transition: 0.5s;
   }
@@ -2063,6 +2081,26 @@ section.OVERLAY{
     color: #FFFFFF;
     font-size: 40px;
     border: none;
+    @media only screen and (max-width: 720px) {
+      font-size: 14px;
+      height: 40px;
+      width: 130px;
+    }
+    @media only screen and (min-device-width: 320px) and (max-device-width: 568px)
+    and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 40/71)
+    {
+      font-size: 14px;
+      height: 40px;
+      width: 130px;
+    }
+    @media only screen
+    and (min-device-width: 414px)
+    and (max-device-width: 736px)
+    and (-webkit-min-device-pixel-ratio: 3) {
+      font-size: 14px;
+      height: 40px;
+      width: 130px;
+    }
   }
   button:hover{
       background-color: rgba(255, 89, 88, 1);
