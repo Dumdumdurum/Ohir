@@ -741,7 +741,7 @@ main section.FRAGMENT{
   justify-content: center;
   font-family: "PT sans";
   div.book{
-    background: url("../images/5775b3515a3f87c3dff03741c6afa199.png") no-repeat;
+    background: url("../images/Book_Mockup_6.png") no-repeat;
     height: 580px;
     width: 815px;
     background-size: 850px 634px;
@@ -880,7 +880,7 @@ main section.FRAGMENT{
         width: 145px;
         font-size: 13px;
         margin-top: 10px;
-        margin-left: 0;
+        margin-left: 45px;
       }
 
       @media only screen and (min-device-width: 320px) and (max-device-width: 568px)
@@ -890,7 +890,7 @@ main section.FRAGMENT{
         width: 145px;
         font-size: 13px;
         margin-top: 10px;
-        margin-left: 0;
+        margin-left: 45px;
       }
       @media only screen
       and (min-device-width: 414px)
@@ -900,7 +900,7 @@ main section.FRAGMENT{
         width: 145px;
         font-size: 13px;
         margin-top: 10px;
-        margin-left: 0;
+        margin-left: 45px;
       }
     }
     button{
@@ -916,6 +916,7 @@ main section.FRAGMENT{
         font-size: 12px;
         letter-spacing: 2px;
         margin-top: 10px;
+        margin-left: 30px;
       }
       @media only screen and (min-device-width: 320px) and (max-device-width: 568px)
       and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 40/71)
@@ -925,6 +926,7 @@ main section.FRAGMENT{
         font-size: 12px;
         letter-spacing: 2px;
         margin-top: 10px;
+        margin-left: 30px;
       }
       @media only screen
       and (min-device-width: 414px)
@@ -935,6 +937,7 @@ main section.FRAGMENT{
         font-size: 12px;
         letter-spacing: 2px;
         margin-top: 10px;
+        margin-left: 30px;
       }
     }
   }
@@ -1061,7 +1064,7 @@ section.mobile{
 //section 5 of the page -- SHOP
 
 main section.SHOP{
-  background: url("../images/800a32708fa0b963090eedc5984d0b11.png") no-repeat;
+  background: url("../images/800a32708fa0b963090eedc5984d0b11.jpg") no-repeat;
   height: 634px;
   background-size: cover;
   background-position: center;
@@ -1313,7 +1316,7 @@ main section.SHOP{
 //section 6 of the page -- BUY FOUR
 
 main section.FOUR{
-  background: url("../images/6be9b44d2734ae87b6612b66e1cfab7a.png") no-repeat;
+  background: url("../images/6be9b44d2734ae87b6612b66e1cfab7a.jpg") no-repeat;
   height: 634px;
   background-size: cover;
   background-position: center;
@@ -1609,6 +1612,9 @@ footer {
   font-family: "PT sans";
   font-size: 20px;
   line-height: 24px;
+  a{
+    text-decoration: none;
+  }
   @media only screen and (max-width: 720px) {
     top: 1934px;
     flex-flow: column;
@@ -1718,20 +1724,20 @@ footer {
   justify-content: center;
   @media only screen and (max-width: 720px) {
     position: absolute;
-    margin-top: 230px;
+    margin-top: 220px;
   }
   @media only screen and (min-device-width: 320px) and (max-device-width: 568px)
   and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 40/71)
   {
     position: absolute;
-    margin-top: 230px;
+    margin-top: 220px;
   }
   @media only screen
   and (min-device-width: 414px)
   and (max-device-width: 736px)
   and (-webkit-min-device-pixel-ratio: 3) {
     position: absolute;
-    margin-top: 230px;
+    margin-top: 220px;
   }
 }
 
@@ -1899,26 +1905,26 @@ a#prev:hover {
   padding: 5px 20px;
   font-family:'PT sans';
 }
-.HAL{
-  letter-spacing: 5px;
-  @media only screen and (max-width: 720px) {
-    letter-spacing: 2px;
-    font-size: 12px;
-  }
-  @media only screen and (min-device-width: 320px) and (max-device-width: 568px)
-  and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 40/71)
-  {
-    letter-spacing: 2px;
-    font-size: 12px;
-  }
-  @media only screen
-  and (min-device-width: 414px)
-  and (max-device-width: 736px)
-  and (-webkit-min-device-pixel-ratio: 3) {
-    letter-spacing: 2px;
-    font-size: 12px;
-  }
-}
+//.HAL{
+//  letter-spacing: 5px;
+//  @media only screen and (max-width: 720px) {
+//    letter-spacing: 2px;
+//    font-size: 12px;
+//  }
+//  @media only screen and (min-device-width: 320px) and (max-device-width: 568px)
+//  and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 40/71)
+//  {
+//    letter-spacing: 2px;
+//    font-size: 12px;
+//  }
+//  @media only screen
+//  and (min-device-width: 414px)
+//  and (max-device-width: 736px)
+//  and (-webkit-min-device-pixel-ratio: 3) {
+//    letter-spacing: 2px;
+//    font-size: 12px;
+//  }
+//}
 
 .quote-phrase {
   height: 100px;
@@ -1946,19 +1952,23 @@ a#prev:hover {
   font-style:normal;
   font-size:22px;
   color: #FFFFFF;
+  letter-spacing: 5px;
   @media only screen and (max-width: 720px) {
-    font-size: 12px;
+    font-size: 11px;
+    letter-spacing: 2px;
   }
   @media only screen and (min-device-width: 320px) and (max-device-width: 568px)
   and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 40/71)
   {
-    font-size: 12px;
+    font-size: 11px;
+    letter-spacing: 2px;
   }
   @media only screen
   and (min-device-width: 414px)
   and (max-device-width: 736px)
   and (-webkit-min-device-pixel-ratio: 3) {
-    font-size: 12px;
+    font-size: 11px;
+    letter-spacing: 2px;
   }
 }
 
@@ -1971,18 +1981,18 @@ a#prev:hover {
 }
 .authorContainer{
   @media only screen and (max-width: 720px) {
-    margin-top: -43px;
+    margin-top: -35px;
   }
   @media only screen and (min-device-width: 320px) and (max-device-width: 568px)
   and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 40/71)
   {
-    margin-top: -43px;
+    margin-top: -35px;
   }
   @media only screen
   and (min-device-width: 414px)
   and (max-device-width: 736px)
   and (-webkit-min-device-pixel-ratio: 3) {
-    margin-top: -43px;
+    margin-top: -35px;
   }
 }
 
@@ -2009,7 +2019,7 @@ a#prev:hover {
     height: 8px;
     width: 8px;
     margin-right: 4px;
-    margin-top: 50px;
+    margin-top: 58px;
   }
   @media only screen and (min-device-width: 320px) and (max-device-width: 568px)
   and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 40/71)
@@ -2017,7 +2027,7 @@ a#prev:hover {
     height: 8px;
     width: 8px;
     margin-right: 4px;
-    margin-top: 50px;
+    margin-top: 58px;
   }
   @media only screen
   and (min-device-width: 414px)
@@ -2026,7 +2036,7 @@ a#prev:hover {
     height: 8px;
     width: 8px;
     margin-right: 4px;
-    margin-top: 50px;
+    margin-top: 58px;
   }
 }
 .active {
@@ -2038,8 +2048,8 @@ a#prev:hover {
 
 section.OVERLAY{
   background-color: rgba(30, 127, 136, 0.9);
-  height: 99vh;
-  width: 99vw;
+  height: 100vh;
+  width: 100vw;
   position: fixed;
   top: 0;
   z-index: 500;
@@ -2104,7 +2114,7 @@ section.OVERLAY{
   }
   button:hover{
       background-color: rgba(255, 89, 88, 1);
-      transition: 0.5s;
+      transition: 0s;
   }
 }
 .hidden{
