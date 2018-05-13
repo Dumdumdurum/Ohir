@@ -477,10 +477,11 @@ section.ONBOARD {
     margin-right: auto;
     display: inline;
     @media only screen and (max-width: 720px) {
+      background: url('../images/Mobile Page Slices/Ohir_book-fnb.png') no-repeat;
       position: absolute;
       height: 220px;
       width: 280px;
-      background-size: 280px 220px;
+      background-size: 279px 210px;
       background-position: 0;
       margin: -170px auto;
     }
@@ -1615,6 +1616,10 @@ footer {
   a{
     text-decoration: none;
   }
+  p:hover{
+    transition: 0.5s;
+    color: #ff5958;
+  }
   @media only screen and (max-width: 720px) {
     top: 1934px;
     flex-flow: column;
@@ -2065,12 +2070,14 @@ section.OVERLAY{
   letter-spacing: 5px;
   @media only screen and (max-width: 720px) {
     font-size: 14px;
+    letter-spacing: 2px;
     line-height: 30px;
   }
   @media only screen and (min-device-width: 320px) and (max-device-width: 568px)
   and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 40/71)
   {
     font-size: 14px;
+    letter-spacing: 2px;
     line-height: 30px;
   }
   @media only screen
@@ -2078,6 +2085,7 @@ section.OVERLAY{
   and (max-device-width: 736px)
   and (-webkit-min-device-pixel-ratio: 3) {
     font-size: 14px;
+    letter-spacing: 2px;
     line-height: 30px;
   }
   a:hover{
